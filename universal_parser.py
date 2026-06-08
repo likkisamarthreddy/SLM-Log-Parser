@@ -327,7 +327,7 @@ BUILTIN_FORMATS = [
         name="bgl_log",
         pattern=re.compile(
             r'^(?P<label>\S+)\s+'
-            r'(?P<timestamp>\d{10}\.\d+)\s+'
+            r'(?P<timestamp>\d{10}(?:\.\d+)?)\s+'
             r'(?P<date>\d{4}\.\d{2}\.\d{2})\s+'
             r'(?P<node>[^\s]+)\s+'
             r'(?P<time>\S+)\s+'
