@@ -279,8 +279,8 @@ BUILTIN_FORMATS = [
         name="apache_error",
         pattern=re.compile(
             r'^\[(?P<timestamp>[^\]]+)\]\s+'
-            r'\[(?:(?P<module>[^:\]]+):)?(?P<level>[^\]]*)\]\s+'
-            r'\[pid\s+(?P<pid>\d+)[^\]]*\]\s*'
+            r'\[(?:(?P<module>[^:\]]+):)?(?P<level>[^\]]*)\]\s*'
+            r'(?:\[pid\s+(?P<pid>\d+)[^\]]*\]\s*)?'
             r'(?:\[client\s+(?P<client>[^\]]+)\]\s*)?'
             r'(?P<message>.+)$'
         ),
