@@ -217,6 +217,9 @@ class LogFormat:
                 import re as _re
                 canonical["message"] = _re.sub(r'\s+', ' ', clean_msg).strip()
 
+        # Always derive event from message (runs with or without anonymizer)
+        canonical["event"] = derive_event(canonical["message"])
+
         return canonical
 
 
@@ -351,6 +354,19 @@ BUILTIN_FORMATS = [
     ),
 
     LogFormat(
+        name="iso_syslog",
+        pattern=re.compile(
+            r'^(?P<timestamp>\d{4}-\d{2}-\d{2}[T ]\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:[+-]\d{2}:\d{2}|Z)?)\s+'
+            r'(?P<hostname>\S+)\s+'
+            r'(?P<process>[A-Za-z0-9_\-\.]+)(?:\((?P<component>[^\)]+)\))?(?:\[(?P<pid>\d+)\])?:\s*'
+            r'(?P<message>.+)$'
+        ),
+        fields=["timestamp", "hostname", "process", "component", "pid", "message"],
+        priority=8,
+        description="ISO-8601 timestamped syslog",
+    ),
+
+    LogFormat(
         name="generic_iso",
         pattern=re.compile(
             r'^(?P<timestamp>\d{4}-\d{2}-\d{2}[T ]\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:[+-]\d{2}:\d{2}|Z)?)\s+'
@@ -425,7 +441,45 @@ def json_to_canonical(raw: Dict[str, Any], line_num: int) -> Dict[str, Any]:
         canonical["message"] = ""
     elif not isinstance(canonical["message"], str):
         canonical["message"] = str(canonical["message"])
+    canonical["event"] = derive_event(canonical["message"])
     return canonical
+
+
+# ---------------------------------------------------------------------------
+# Event derivation (always runs, independent of anonymizer)
+# ---------------------------------------------------------------------------
+
+def derive_event(message: str) -> str:
+    """Derive a normalized event label from the log message."""
+    msg_lower = message.lower()
+    
+    if "session opened" in msg_lower:
+        return "session_opened"
+    elif "session closed" in msg_lower:
+        return "session_closed"
+    elif "authentication failure" in msg_lower or "failure; logname=" in msg_lower:
+        return "authentication_failure"
+    elif "password check failed" in msg_lower:
+        return "authentication_failure"
+    elif "accepted password" in msg_lower or "accepted publickey" in msg_lower:
+        return "authentication_success"
+    elif "exited abnormally" in msg_lower:
+        return "abnormal_exit"
+    elif "disconnected from" in msg_lower:
+        return "session_closed"
+    elif "sudo" in msg_lower and ("COMMAND=" in message or "command" in msg_lower):
+        return "sudo_command"
+    elif "started" in msg_lower or "starting" in msg_lower:
+        return "service_started"
+    elif "failed" in msg_lower and "authentication" not in msg_lower:
+        return "service_failed"
+    elif "stopped" in msg_lower or "stopping" in msg_lower:
+        return "service_stopped"
+    elif "new session" in msg_lower:
+        return "new_session"
+    elif "removed session" in msg_lower or "session removed" in msg_lower:
+        return "removed_session"
+    return "unknown"
 
 
 # ---------------------------------------------------------------------------
@@ -468,6 +522,7 @@ def fallback_to_canonical(line: str, line_num: int) -> Dict[str, Any]:
                     canonical["severity"] = normalize_severity(kv_val)
                 else:
                     canonical[target] = kv_val
+    canonical["event"] = derive_event(canonical["message"])
     return canonical
 
 

@@ -9,11 +9,13 @@ class Anonymizer:
         self.users = {}
         self.pids = {}
         self.remote_hosts = {}
+        self.ports = {}
         
         self._host_counter = 1
         self._user_counter = 1
         self._pid_counter = 1
         self._rhost_counter = 1
+        self._port_counter = 1
 
     def _get_id(self, mapping: dict, prefix: str, raw_val: str, counter_attr: str) -> str:
         if raw_val not in mapping:
@@ -26,6 +28,7 @@ class Anonymizer:
     def _get_user(self, val): return self._get_id(self.users, "USER", str(val), "_user_counter")
     def _get_pid(self, val): return self._get_id(self.pids, "PID", str(val), "_pid_counter")
     def _get_rhost(self, val): return self._get_id(self.remote_hosts, "REMOTE_HOST", str(val), "_rhost_counter")
+    def _get_port(self, val): return self._get_id(self.ports, "PORT", str(val), "_port_counter")
 
     def derive_event_and_enrich(self, message: str, meta: dict) -> str:
         msg_lower = message.lower()
@@ -33,12 +36,12 @@ class Anonymizer:
         
         if "session opened" in msg_lower: 
             event = "session_opened"
-            m = re.search(r'session opened for user (\S+)', message)
+            m = re.search(r'session opened for user ([A-Za-z0-9_\-\.]+)', message)
             if m: meta["user"] = m.group(1)
             
         elif "session closed" in msg_lower: 
             event = "session_closed"
-            m = re.search(r'session closed for user (\S+)', message)
+            m = re.search(r'session closed for user ([A-Za-z0-9_\-\.]+)', message)
             if m: meta["user"] = m.group(1)
             
         elif "authentication failure" in msg_lower or "failure; logname=" in msg_lower: 
@@ -55,6 +58,24 @@ class Anonymizer:
             
         elif "disconnected from" in msg_lower: 
             event = "session_closed"
+            
+        elif 'sudo' in message and ('COMMAND=' in message or 'command' in msg_lower):
+            event = "sudo_command"
+            
+        elif 'started' in msg_lower or 'starting' in msg_lower:
+            event = "service_started"
+            
+        elif 'failed' in msg_lower and 'authentication' not in msg_lower:
+            event = "service_failed"
+            
+        elif 'stopped' in msg_lower or 'stopping' in msg_lower:
+            event = "service_stopped"
+            
+        elif 'new session' in msg_lower:
+            event = "new_session"
+            
+        elif 'removed session' in msg_lower or 'session removed' in msg_lower:
+            event = "removed_session"
             
         return event
 
@@ -77,55 +98,58 @@ class Anonymizer:
         out["event"] = self.derive_event_and_enrich(msg, meta)
         
         # Mask user
-        if "user" in meta and meta["user"]:
-            meta["user"] = self._get_user(meta["user"])
-        if "ruser" in meta and meta["ruser"]:
-            meta["ruser"] = self._get_user(meta["ruser"])
+        local_mapping = {}
+        
+        orig_user = meta.get("user")
+        if orig_user:
+            meta["user"] = self._get_user(orig_user)
+            local_mapping[orig_user] = meta["user"]
+            
+        orig_ruser = meta.get("ruser")
+        if orig_ruser:
+            meta["ruser"] = self._get_user(orig_ruser)
+            local_mapping[orig_ruser] = meta["ruser"]
             
         # Mask rhost
-        if "rhost" in meta and meta["rhost"]:
-            meta["rhost"] = self._get_rhost(meta["rhost"])
+        orig_rhost = meta.get("rhost")
+        if orig_rhost:
+            meta["rhost"] = self._get_rhost(orig_rhost)
+            local_mapping[orig_rhost] = meta["rhost"]
             
         # Scrape and mask naked IP addresses
         ip_pattern = re.compile(r'\b(?:\d{1,3}\.){3}\d{1,3}\b')
         for ip in ip_pattern.findall(msg):
-            self._get_rhost(ip)  # Register it in the mapping
+            local_mapping[ip] = self._get_rhost(ip)
             
-        # Mask message (replace known entities in reverse length order)
-        masked_msg = msg
-        replacements = []
-        for real, anon in self.users.items():
-            if real: replacements.append((real, anon))
-        for real, anon in self.hosts.items():
-            if real: replacements.append((real, anon))
-        for real, anon in self.remote_hosts.items():
-            if real: replacements.append((real, anon))
+        # Scrape and mask port numbers
+        port_pattern = re.compile(r'\bport\s+(\d+)\b')
+        for port_match in port_pattern.finditer(msg):
+            port = port_match.group(1)
+            local_mapping[port] = self._get_port(port)
             
-        # Sort by length descending to avoid partial matches
-        replacements.sort(key=lambda x: -len(x[0]))
+        # Build unified mapping and single regex for message
+        if local_mapping:
+            # Sort by length descending to avoid partial matches
+            sorted_keys = sorted(local_mapping.keys(), key=lambda x: -len(str(x)))
+            pattern = re.compile(r'\b(' + '|'.join(map(re.escape, sorted_keys)) + r')\b')
+            out["message"] = pattern.sub(lambda m: local_mapping[m.group(1)], msg)
+        else:
+            out["message"] = msg
         
-        for real, anon in replacements:
-            masked_msg = re.sub(rf'\b{re.escape(real)}\b', anon, masked_msg)
-            
-        out["message"] = masked_msg
-        
-        # Construct masked raw log
-        masked_raw = raw_line
+        # Include PIDs and Hostname for the raw_log replacement
+        if pid is not None:
+            local_mapping[str(pid)] = out["pid"]
         if hostname:
-            masked_raw = re.sub(rf'\b{re.escape(hostname)}\b', out["hostname"], masked_raw, count=1)
-        if pid:
-            masked_raw = re.sub(rf'\[{re.escape(str(pid))}\]', f'[{out["pid"]}]', masked_raw)
+            local_mapping[hostname] = out["hostname"]
             
-        for real_u, anon_u in self.users.items():
-            if real_u:
-                masked_raw = re.sub(rf'\buser\s+{re.escape(real_u)}\b', f'user {anon_u}', masked_raw)
-                masked_raw = re.sub(rf'\buser={re.escape(real_u)}\b', f'user={anon_u}', masked_raw)
-        for real_r, anon_r in self.remote_hosts.items():
-            if real_r:
-                masked_raw = re.sub(rf'\brhost={re.escape(real_r)}\b', f'rhost={anon_r}', masked_raw)
-                
+        if local_mapping:
+            sorted_keys = sorted(local_mapping.keys(), key=lambda x: -len(str(x)))
+            pattern = re.compile(r'\b(' + '|'.join(map(re.escape, sorted_keys)) + r')\b')
+            out["masked_log"] = pattern.sub(lambda m: local_mapping[m.group(1)], raw_line)
+        else:
+            out["masked_log"] = raw_line
+            
         out["raw_log"] = raw_line
-        out["masked_log"] = masked_raw
         
         return out
         
@@ -136,5 +160,6 @@ class Anonymizer:
                 "hosts": self.hosts,
                 "users": self.users,
                 "pids": self.pids,
-                "remote_hosts": self.remote_hosts
+                "remote_hosts": self.remote_hosts,
+                "ports": self.ports
             }, f, indent=2)
