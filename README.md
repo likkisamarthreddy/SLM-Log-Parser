@@ -90,7 +90,7 @@ By anonymizing and dropping noisy metadata, sequence length was reduced drastica
 ## 🚀 Installation & Setup
 
 ### Environment Requirements
-If you are running this on a **College GPU Node**, **Google Colab**, or **Kaggle** (Tesla T4 or better recommended), install the required dependencies:
+If you are running this on a **Google Colab**, or **Kaggle** (Tesla T4 or better recommended), install the required dependencies:
 
 ```bash
 # Clone the repository
