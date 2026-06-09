@@ -32,6 +32,11 @@ import urllib.request
 import urllib.error
 from typing import Optional, Dict, List, Any, Tuple, Iterator, IO, Generator
 
+try:
+    from anonymizer import Anonymizer
+except ImportError:
+    from src.anonymizer import Anonymizer
+
 
 # ---------------------------------------------------------------------------
 # Severity normalization
@@ -615,12 +620,14 @@ class UniversalLogParser:
     """
 
     def __init__(self, sample_size: int = 20, failure_threshold: int = 10,
-                 llm_endpoint: Optional[str] = None, llm_model: str = "llama3"):
+                 llm_endpoint: Optional[str] = None, llm_model: str = "llama3",
+                 anonymize: bool = False):
         self.sample_size = sample_size
         self.failure_threshold = failure_threshold
         self.detected_format: Optional[LogFormat] = None
         self.is_json_format: bool = False
         self.stats = self._empty_stats()
+        self.anonymizer = Anonymizer() if anonymize else None
 
         # LLM bridge (None = disabled)
         self._llm: Optional[LLMFormatGenerator] = None
@@ -750,6 +757,8 @@ class UniversalLogParser:
             nonlocal failure_buffer
             for buf_line, buf_num in failure_buffer:
                 fb = fallback_to_canonical(buf_line, buf_num)
+                if self.anonymizer:
+                    fb = self.anonymizer.anonymize(fb, buf_line)
                 self.stats["failed_lines"] += 1
                 self.stats["parsed_lines"] += 1
                 yield fb
@@ -761,11 +770,15 @@ class UniversalLogParser:
             for buf_line, buf_num in failure_buffer:
                 reparsed = self._parse_line_raw(buf_line, buf_num)
                 if reparsed:
+                    if self.anonymizer:
+                        reparsed = self.anonymizer.anonymize(reparsed, buf_line)
                     self.stats["replayed_lines"] += 1
                     self.stats["parsed_lines"] += 1
                     yield reparsed
                 else:
                     fb = fallback_to_canonical(buf_line, buf_num)
+                    if self.anonymizer:
+                        fb = self.anonymizer.anonymize(fb, buf_line)
                     self.stats["replayed_lines"] += 1
                     self.stats["failed_lines"] += 1
                     self.stats["parsed_lines"] += 1
@@ -802,6 +815,9 @@ class UniversalLogParser:
                 if failure_buffer:
                     yield from flush_buffer_as_fallback()
                     consecutive_failures = 0
+
+                if self.anonymizer:
+                    parsed = self.anonymizer.anonymize(parsed, raw_line)
 
                 yield parsed
                 self.stats["parsed_lines"] += 1
@@ -955,6 +971,8 @@ def main():
                     help="LLM model name (default: llama3)")
     ap.add_argument("--streaming", action="store_true",
                     help="Use streaming mode for large files (writes NDJSON directly)")
+    ap.add_argument("--anonymize", action="store_true",
+                    help="Anonymize sensitive tokens (PIDs, Hostnames, IPs)")
     args = ap.parse_args()
 
     if not args.output:
@@ -967,6 +985,7 @@ def main():
         failure_threshold=args.failure_threshold,
         llm_endpoint=args.llm_endpoint,
         llm_model=args.llm_model,
+        anonymize=args.anonymize,
     )
 
     if args.streaming:
@@ -976,6 +995,11 @@ def main():
         records = parser.parse_file(args.input)
         parser.save_json(records, args.output, fmt=args.format,
                          include_metadata=not args.no_metadata)
+
+    if args.anonymize and parser.anonymizer:
+        map_path = os.path.join(os.path.dirname(args.output), "anonymization_map.json")
+        parser.anonymizer.save_mapping(map_path)
+        print(f"[UniversalParser] Anonymization mapping saved to {map_path}")
 
     parser.print_summary()
 

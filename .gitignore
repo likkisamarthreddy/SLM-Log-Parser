@@ -1,0 +1,7 @@
+# Ignore massive log files (GitHub has a 100MB limit)
+data/parsed/*.ndjson
+data/parsed/auth_anonymized.ndjson
+
+# Python caching
+__pycache__/
+*.pyc

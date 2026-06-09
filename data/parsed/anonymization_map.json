@@ -1,0 +1,22 @@
+{
+  "hosts": {},
+  "users": {
+    "root(uid=0)": "USER_001",
+    "root": "USER_002",
+    "pi(uid=1000)": "USER_003",
+    "lightdm(uid=104)": "USER_004",
+    "lightdm": "USER_005",
+    "pi": "USER_006"
+  },
+  "pids": {},
+  "remote_hosts": {
+    "192.168.0.106": "REMOTE_HOST_001",
+    "192.168.1.11": "REMOTE_HOST_002",
+    "192.168.1.20": "REMOTE_HOST_003",
+    "192.168.0.188": "REMOTE_HOST_004",
+    "0.0.0.0": "REMOTE_HOST_005",
+    "192.168.1.10": "REMOTE_HOST_006",
+    "192.168.1.100": "REMOTE_HOST_007",
+    "192.168.1.50": "REMOTE_HOST_008"
+  }
+}
