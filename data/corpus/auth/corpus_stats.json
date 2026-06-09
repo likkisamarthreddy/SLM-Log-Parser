@@ -1,0 +1,42 @@
+{
+  "raw_masked": {
+    "total_lines": 650854,
+    "total_tokens": 44994152,
+    "unique_tokens": 605,
+    "rare_tokens": 230,
+    "avg_tokens_per_line": 69.1309448816478,
+    "time_seconds": 42.53
+  },
+  "message_only": {
+    "total_lines": 650854,
+    "total_tokens": 10260585,
+    "unique_tokens": 569,
+    "rare_tokens": 228,
+    "avg_tokens_per_line": 15.764802859012928,
+    "time_seconds": 20.48
+  },
+  "process_message": {
+    "total_lines": 650854,
+    "total_tokens": 11777700,
+    "unique_tokens": 580,
+    "rare_tokens": 229,
+    "avg_tokens_per_line": 18.095763412378197,
+    "time_seconds": 20.68
+  },
+  "event_message": {
+    "total_lines": 650854,
+    "total_tokens": 12962591,
+    "unique_tokens": 577,
+    "rare_tokens": 226,
+    "avg_tokens_per_line": 19.916280763427743,
+    "time_seconds": 22.85
+  },
+  "full": {
+    "total_lines": 650854,
+    "total_tokens": 20832247,
+    "unique_tokens": 613,
+    "rare_tokens": 229,
+    "avg_tokens_per_line": 32.00755776257041,
+    "time_seconds": 29.23
+  }
+}

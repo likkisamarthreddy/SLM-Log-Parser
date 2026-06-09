@@ -1,0 +1,2000 @@
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_001 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_002 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_002 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_002 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_002 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_002 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_002 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_002 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_002 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_002 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_002 user=USER_001 | authentication failure
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_001 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_001 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_001 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_001 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_001 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | unknown | check pass; user unknown
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_001 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_001 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_001 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_001 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_001 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_003 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_003 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_003 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_003 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_003 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_003 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_003 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_003 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_003 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_003 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_004 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_004 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_004 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_004 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_004 | authentication failure
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+ftpd | unknown | connection from REMOTE_HOST_005 (24-54-76-216.bflony.adelphia.net) at Fri Jun 17 07:07:00 2005
+ftpd | unknown | connection from REMOTE_HOST_005 (24-54-76-216.bflony.adelphia.net) at Fri Jun 17 07:07:00 2005
+ftpd | unknown | connection from REMOTE_HOST_005 (24-54-76-216.bflony.adelphia.net) at Fri Jun 17 07:07:00 2005
+ftpd | unknown | connection from REMOTE_HOST_005 (24-54-76-216.bflony.adelphia.net) at Fri Jun 17 07:07:00 2005
+ftpd | unknown | connection from REMOTE_HOST_005 (24-54-76-216.bflony.adelphia.net) at Fri Jun 17 07:07:00 2005
+ftpd | unknown | connection from REMOTE_HOST_005 (24-54-76-216.bflony.adelphia.net) at Fri Jun 17 07:07:00 2005
+ftpd | unknown | connection from REMOTE_HOST_005 (24-54-76-216.bflony.adelphia.net) at Fri Jun 17 07:07:02 2005
+ftpd | unknown | connection from REMOTE_HOST_005 (24-54-76-216.bflony.adelphia.net) at Fri Jun 17 07:07:04 2005
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_006 user=USER_004 | authentication failure
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+ftpd | unknown | connection from REMOTE_HOST_007 (lns-vlq-45-tou-82-252-162-81.adsl.proxad.net) at Fri Jun 17 20:55:06 2005
+ftpd | unknown | connection from REMOTE_HOST_007 (lns-vlq-45-tou-82-252-162-81.adsl.proxad.net) at Fri Jun 17 20:55:06 2005
+ftpd | unknown | connection from REMOTE_HOST_007 (lns-vlq-45-tou-82-252-162-81.adsl.proxad.net) at Fri Jun 17 20:55:06 2005
+ftpd | unknown | connection from REMOTE_HOST_007 (lns-vlq-45-tou-82-252-162-81.adsl.proxad.net) at Fri Jun 17 20:55:06 2005
+ftpd | unknown | connection from REMOTE_HOST_007 (lns-vlq-45-tou-82-252-162-81.adsl.proxad.net) at Fri Jun 17 20:55:06 2005
+ftpd | unknown | connection from REMOTE_HOST_007 (lns-vlq-45-tou-82-252-162-81.adsl.proxad.net) at Fri Jun 17 20:55:07 2005
+ftpd | unknown | connection from REMOTE_HOST_007 (lns-vlq-45-tou-82-252-162-81.adsl.proxad.net) at Fri Jun 17 20:55:07 2005
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_008 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_008 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_008 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_008 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_008 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_008 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_008 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_008 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_008 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_008 | authentication failure
+ftpd | unknown | connection from REMOTE_HOST_007 (lns-vlq-45-tou-82-252-162-81.adsl.proxad.net) at Sat Jun 18 02:08:10 2005
+ftpd | unknown | connection from REMOTE_HOST_007 (lns-vlq-45-tou-82-252-162-81.adsl.proxad.net) at Sat Jun 18 02:08:10 2005
+ftpd | unknown | connection from REMOTE_HOST_007 (lns-vlq-45-tou-82-252-162-81.adsl.proxad.net) at Sat Jun 18 02:08:10 2005
+ftpd | unknown | connection from REMOTE_HOST_007 (lns-vlq-45-tou-82-252-162-81.adsl.proxad.net) at Sat Jun 18 02:08:10 2005
+ftpd | unknown | connection from REMOTE_HOST_007 (lns-vlq-45-tou-82-252-162-81.adsl.proxad.net) at Sat Jun 18 02:08:10 2005
+ftpd | unknown | connection from REMOTE_HOST_007 (lns-vlq-45-tou-82-252-162-81.adsl.proxad.net) at Sat Jun 18 02:08:10 2005
+ftpd | unknown | connection from REMOTE_HOST_007 (lns-vlq-45-tou-82-252-162-81.adsl.proxad.net) at Sat Jun 18 02:08:10 2005
+ftpd | unknown | connection from REMOTE_HOST_007 (lns-vlq-45-tou-82-252-162-81.adsl.proxad.net) at Sat Jun 18 02:08:11 2005
+ftpd | unknown | connection from REMOTE_HOST_007 (lns-vlq-45-tou-82-252-162-81.adsl.proxad.net) at Sat Jun 18 02:08:11 2005
+ftpd | unknown | connection from REMOTE_HOST_007 (lns-vlq-45-tou-82-252-162-81.adsl.proxad.net) at Sat Jun 18 02:08:11 2005
+ftpd | unknown | connection from REMOTE_HOST_007 (lns-vlq-45-tou-82-252-162-81.adsl.proxad.net) at Sat Jun 18 02:08:11 2005
+ftpd | unknown | connection from REMOTE_HOST_007 (lns-vlq-45-tou-82-252-162-81.adsl.proxad.net) at Sat Jun 18 02:08:11 2005
+ftpd | unknown | connection from REMOTE_HOST_007 (lns-vlq-45-tou-82-252-162-81.adsl.proxad.net) at Sat Jun 18 02:08:12 2005
+ftpd | unknown | connection from REMOTE_HOST_007 (lns-vlq-45-tou-82-252-162-81.adsl.proxad.net) at Sat Jun 18 02:08:12 2005
+ftpd | unknown | connection from REMOTE_HOST_007 (lns-vlq-45-tou-82-252-162-81.adsl.proxad.net) at Sat Jun 18 02:08:12 2005
+ftpd | unknown | User unknown timed out after 900 seconds at Sat Jun 18 02:23:10 2005
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+cups | unknown | cupsd shutdown succeeded
+cups | unknown | cupsd startup succeeded
+unknown | unknown | timestamp_format=bsd_syslog | Jun 19 04:09:11 HOST_001 syslogd 1.4.1: restart.
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+ftpd | unknown | connection from REMOTE_HOST_009 () at Mon Jun 20 03:40:59 2005
+ftpd | unknown | connection from REMOTE_HOST_009 () at Mon Jun 20 03:40:59 2005
+ftpd | unknown | connection from REMOTE_HOST_009 () at Mon Jun 20 03:40:59 2005
+ftpd | unknown | connection from REMOTE_HOST_009 () at Mon Jun 20 03:40:59 2005
+ftpd | unknown | connection from REMOTE_HOST_009 () at Mon Jun 20 03:40:59 2005
+ftpd | unknown | connection from REMOTE_HOST_009 () at Mon Jun 20 03:40:59 2005
+ftpd | unknown | connection from REMOTE_HOST_009 () at Mon Jun 20 03:40:59 2005
+ftpd | unknown | connection from REMOTE_HOST_009 () at Mon Jun 20 03:40:59 2005
+ftpd | unknown | connection from REMOTE_HOST_009 () at Mon Jun 20 03:40:59 2005
+ftpd | unknown | connection from REMOTE_HOST_009 () at Mon Jun 20 03:40:59 2005
+ftpd | unknown | connection from REMOTE_HOST_009 () at Mon Jun 20 03:40:59 2005
+ftpd | unknown | connection from REMOTE_HOST_009 () at Mon Jun 20 03:40:59 2005
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+snmpd | unknown | Received SNMP packet(s) from REMOTE_HOST_010
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_011 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_011 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_011 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_011 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_011 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_011 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_011 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_011 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_011 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_011 | authentication failure
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_012 user=USER_004 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_012 user=USER_004 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_012 user=USER_004 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_012 user=USER_004 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_012 user=USER_004 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_012 user=USER_004 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_013 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_013 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_013 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_013 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_013 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_013 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_013 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_013 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_013 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_013 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_013 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_013 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_013 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_013 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_013 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_013 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_013 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_013 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_013 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_013 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_013 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_013 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_013 user=USER_001 | authentication failure
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_014 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_014 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_014 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_014 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_014 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_014 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_014 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_014 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_014 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_014 | authentication failure
+ftpd | unknown | connection from REMOTE_HOST_015 () at Wed Jun 22 13:16:30 2005
+ftpd | unknown | connection from REMOTE_HOST_015 () at Wed Jun 22 13:16:30 2005
+ftpd | unknown | connection from REMOTE_HOST_015 () at Wed Jun 22 13:16:30 2005
+ftpd | unknown | connection from REMOTE_HOST_015 () at Wed Jun 22 13:16:30 2005
+ftpd | unknown | connection from REMOTE_HOST_015 () at Wed Jun 22 13:16:30 2005
+ftpd | unknown | connection from REMOTE_HOST_015 () at Wed Jun 22 13:16:30 2005
+ftpd | unknown | connection from REMOTE_HOST_015 () at Wed Jun 22 13:16:30 2005
+ftpd | unknown | connection from REMOTE_HOST_015 () at Wed Jun 22 13:16:30 2005
+ftpd | unknown | connection from REMOTE_HOST_015 () at Wed Jun 22 13:16:30 2005
+ftpd | unknown | connection from REMOTE_HOST_015 () at Wed Jun 22 13:16:30 2005
+ftpd | unknown | connection from REMOTE_HOST_015 () at Wed Jun 22 13:16:30 2005
+ftpd | unknown | connection from REMOTE_HOST_015 () at Wed Jun 22 13:16:30 2005
+ftpd | unknown | connection from REMOTE_HOST_015 () at Wed Jun 22 13:16:30 2005
+ftpd | unknown | connection from REMOTE_HOST_015 () at Wed Jun 22 13:16:30 2005
+ftpd | unknown | connection from REMOTE_HOST_015 () at Wed Jun 22 13:16:30 2005
+ftpd | unknown | connection from REMOTE_HOST_015 () at Wed Jun 22 13:16:30 2005
+ftpd | unknown | connection from REMOTE_HOST_015 () at Wed Jun 22 13:16:30 2005
+ftpd | unknown | connection from REMOTE_HOST_015 () at Wed Jun 22 13:16:31 2005
+ftpd | unknown | connection from REMOTE_HOST_015 () at Wed Jun 22 13:16:31 2005
+ftpd | unknown | connection from REMOTE_HOST_015 () at Wed Jun 22 13:16:31 2005
+ftpd | unknown | connection from REMOTE_HOST_015 () at Wed Jun 22 13:16:31 2005
+ftpd | unknown | connection from REMOTE_HOST_015 () at Wed Jun 22 13:16:31 2005
+ftpd | unknown | connection from REMOTE_HOST_015 () at Wed Jun 22 13:16:32 2005
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_016 user=USER_004 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_016 user=USER_004 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_016 user=USER_004 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_016 user=USER_004 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_016 user=USER_004 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_016 user=USER_004 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_016 user=USER_004 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_016 user=USER_004 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_016 user=USER_004 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_016 user=USER_004 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_017 | authentication failure
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_018 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_018 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_018 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_018 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_018 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_018 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_018 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_018 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_018 user=USER_001 | authentication failure
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+ftpd | unknown | connection from REMOTE_HOST_019 () at Fri Jun 24 18:55:11 2005
+ftpd | unknown | connection from REMOTE_HOST_019 () at Fri Jun 24 18:55:11 2005
+ftpd | unknown | connection from REMOTE_HOST_019 () at Fri Jun 24 18:55:11 2005
+ftpd | unknown | connection from REMOTE_HOST_019 () at Fri Jun 24 18:55:11 2005
+ftpd | unknown | connection from REMOTE_HOST_019 () at Fri Jun 24 18:55:11 2005
+ftpd | unknown | connection from REMOTE_HOST_019 () at Fri Jun 24 18:55:11 2005
+ftpd | unknown | connection from REMOTE_HOST_019 () at Fri Jun 24 18:55:11 2005
+ftpd | unknown | connection from REMOTE_HOST_019 () at Fri Jun 24 18:55:18 2005
+ftpd | unknown | connection from REMOTE_HOST_019 () at Fri Jun 24 18:55:18 2005
+ftpd | unknown | connection from REMOTE_HOST_019 () at Fri Jun 24 18:55:18 2005
+ftpd | unknown | connection from REMOTE_HOST_019 () at Fri Jun 24 18:55:18 2005
+ftpd | unknown | connection from REMOTE_HOST_019 () at Fri Jun 24 18:55:18 2005
+ftpd | unknown | connection from REMOTE_HOST_019 () at Fri Jun 24 18:55:18 2005
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_020 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_020 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_020 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_020 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_020 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_020 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_020 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_020 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_020 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_020 | authentication failure
+ftpd | unknown | connection from REMOTE_HOST_021 () at Sat Jun 25 09:20:24 2005
+ftpd | unknown | connection from REMOTE_HOST_021 () at Sat Jun 25 09:20:24 2005
+ftpd | unknown | connection from REMOTE_HOST_021 () at Sat Jun 25 09:20:24 2005
+ftpd | unknown | connection from REMOTE_HOST_021 () at Sat Jun 25 09:20:24 2005
+ftpd | unknown | connection from REMOTE_HOST_021 () at Sat Jun 25 09:20:24 2005
+ftpd | unknown | connection from REMOTE_HOST_021 () at Sat Jun 25 09:20:24 2005
+ftpd | unknown | connection from REMOTE_HOST_021 () at Sat Jun 25 09:20:24 2005
+ftpd | unknown | connection from REMOTE_HOST_021 () at Sat Jun 25 09:20:24 2005
+ftpd | unknown | connection from REMOTE_HOST_021 () at Sat Jun 25 09:20:24 2005
+ftpd | unknown | connection from REMOTE_HOST_021 () at Sat Jun 25 09:20:24 2005
+ftpd | unknown | connection from REMOTE_HOST_021 () at Sat Jun 25 09:20:24 2005
+ftpd | unknown | connection from REMOTE_HOST_021 () at Sat Jun 25 09:20:24 2005
+ftpd | unknown | connection from REMOTE_HOST_021 () at Sat Jun 25 09:20:24 2005
+ftpd | unknown | connection from REMOTE_HOST_021 () at Sat Jun 25 09:20:24 2005
+ftpd | unknown | connection from REMOTE_HOST_021 () at Sat Jun 25 09:20:24 2005
+ftpd | unknown | connection from REMOTE_HOST_021 () at Sat Jun 25 09:20:24 2005
+ftpd | unknown | connection from REMOTE_HOST_021 () at Sat Jun 25 09:20:24 2005
+ftpd | unknown | connection from REMOTE_HOST_021 () at Sat Jun 25 09:20:24 2005
+ftpd | unknown | connection from REMOTE_HOST_022 () at Sat Jun 25 19:25:30 2005
+ftpd | unknown | connection from REMOTE_HOST_022 () at Sat Jun 25 19:25:30 2005
+ftpd | unknown | connection from REMOTE_HOST_022 () at Sat Jun 25 19:25:30 2005
+ftpd | unknown | connection from REMOTE_HOST_022 () at Sat Jun 25 19:25:30 2005
+ftpd | unknown | connection from REMOTE_HOST_022 () at Sat Jun 25 19:25:30 2005
+ftpd | unknown | connection from REMOTE_HOST_022 () at Sat Jun 25 19:25:30 2005
+ftpd | unknown | connection from REMOTE_HOST_022 () at Sat Jun 25 19:25:30 2005
+ftpd | unknown | connection from REMOTE_HOST_022 () at Sat Jun 25 19:25:30 2005
+ftpd | unknown | connection from REMOTE_HOST_022 () at Sat Jun 25 19:25:30 2005
+ftpd | unknown | connection from REMOTE_HOST_022 () at Sat Jun 25 19:25:31 2005
+ftpd | unknown | connection from REMOTE_HOST_022 () at Sat Jun 25 19:25:31 2005
+ftpd | unknown | connection from REMOTE_HOST_022 () at Sat Jun 25 19:25:31 2005
+ftpd | unknown | connection from REMOTE_HOST_022 () at Sat Jun 25 19:25:34 2005
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+cups | unknown | cupsd shutdown succeeded
+cups | unknown | cupsd startup succeeded
+unknown | unknown | timestamp_format=bsd_syslog | Jun 26 04:04:31 HOST_001 syslogd 1.4.1: restart.
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_023 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_023 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_023 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_023 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_023 user=USER_001 | authentication failure
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_024 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_024 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_024 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_024 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_024 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_024 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_024 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_024 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_024 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_025 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_025 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_025 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_025 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_025 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_025 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_025 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_025 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_025 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_025 user=USER_001 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_026 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_026 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_026 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_026 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_026 | authentication failure
+ftpd | unknown | connection from REMOTE_HOST_027 () at Wed Jun 29 03:22:22 2005
+ftpd | unknown | connection from REMOTE_HOST_027 () at Wed Jun 29 03:22:22 2005
+ftpd | unknown | connection from REMOTE_HOST_027 () at Wed Jun 29 03:22:22 2005
+ftpd | unknown | connection from REMOTE_HOST_027 () at Wed Jun 29 03:22:22 2005
+ftpd | unknown | connection from REMOTE_HOST_027 () at Wed Jun 29 03:22:22 2005
+ftpd | unknown | connection from REMOTE_HOST_027 () at Wed Jun 29 03:22:22 2005
+ftpd | unknown | connection from REMOTE_HOST_027 () at Wed Jun 29 03:22:22 2005
+ftpd | unknown | connection from REMOTE_HOST_027 () at Wed Jun 29 03:22:22 2005
+ftpd | unknown | connection from REMOTE_HOST_027 () at Wed Jun 29 03:22:22 2005
+ftpd | unknown | connection from REMOTE_HOST_027 () at Wed Jun 29 03:22:22 2005
+ftpd | unknown | connection from REMOTE_HOST_027 () at Wed Jun 29 03:22:22 2005
+ftpd | unknown | connection from REMOTE_HOST_027 () at Wed Jun 29 03:22:22 2005
+ftpd | unknown | connection from REMOTE_HOST_027 () at Wed Jun 29 03:22:22 2005
+ftpd | unknown | connection from REMOTE_HOST_027 () at Wed Jun 29 03:22:22 2005
+ftpd | unknown | connection from REMOTE_HOST_027 () at Wed Jun 29 03:22:22 2005
+ftpd | unknown | connection from REMOTE_HOST_027 () at Wed Jun 29 03:22:22 2005
+ftpd | unknown | connection from REMOTE_HOST_027 () at Wed Jun 29 03:22:22 2005
+ftpd | unknown | connection from REMOTE_HOST_027 () at Wed Jun 29 03:22:22 2005
+ftpd | unknown | connection from REMOTE_HOST_027 () at Wed Jun 29 03:22:22 2005
+ftpd | unknown | connection from REMOTE_HOST_027 () at Wed Jun 29 03:22:22 2005
+ftpd | unknown | connection from REMOTE_HOST_027 () at Wed Jun 29 03:22:22 2005
+ftpd | unknown | connection from REMOTE_HOST_027 () at Wed Jun 29 03:22:22 2005
+ftpd | unknown | connection from REMOTE_HOST_027 () at Wed Jun 29 03:22:23 2005
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_028 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_028 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_028 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_028 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_028 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_028 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_028 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_028 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_028 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_028 user=USER_001 | authentication failure
+ftpd | unknown | connection from REMOTE_HOST_029 () at Wed Jun 29 10:48:01 2005
+ftpd | unknown | connection from REMOTE_HOST_029 () at Wed Jun 29 10:48:01 2005
+ftpd | unknown | connection from REMOTE_HOST_029 () at Wed Jun 29 10:48:01 2005
+ftpd | unknown | connection from REMOTE_HOST_029 () at Wed Jun 29 10:48:01 2005
+ftpd | unknown | connection from REMOTE_HOST_029 () at Wed Jun 29 10:48:01 2005
+ftpd | unknown | connection from REMOTE_HOST_029 () at Wed Jun 29 10:48:01 2005
+ftpd | unknown | connection from REMOTE_HOST_029 () at Wed Jun 29 10:48:05 2005
+ftpd | unknown | connection from REMOTE_HOST_029 () at Wed Jun 29 10:48:06 2005
+ftpd | unknown | connection from REMOTE_HOST_029 () at Wed Jun 29 10:48:06 2005
+ftpd | unknown | connection from REMOTE_HOST_029 () at Wed Jun 29 10:48:06 2005
+ftpd | unknown | connection from REMOTE_HOST_029 () at Wed Jun 29 10:48:08 2005
+ftpd | unknown | connection from REMOTE_HOST_029 () at Wed Jun 29 10:48:08 2005
+ftpd | unknown | connection from REMOTE_HOST_029 () at Wed Jun 29 10:48:08 2005
+ftpd | unknown | connection from REMOTE_HOST_029 () at Wed Jun 29 10:48:10 2005
+ftpd | unknown | connection from REMOTE_HOST_029 () at Wed Jun 29 10:48:12 2005
+ftpd | unknown | connection from REMOTE_HOST_029 () at Wed Jun 29 10:48:12 2005
+ftpd | unknown | connection from REMOTE_HOST_029 () at Wed Jun 29 10:48:13 2005
+ftpd | unknown | connection from REMOTE_HOST_029 () at Wed Jun 29 10:48:15 2005
+ftpd | unknown | connection from REMOTE_HOST_029 () at Wed Jun 29 10:48:17 2005
+ftpd | unknown | connection from REMOTE_HOST_029 () at Wed Jun 29 10:48:17 2005
+ftpd | unknown | connection from REMOTE_HOST_029 () at Wed Jun 29 10:48:18 2005
+ftpd | unknown | connection from REMOTE_HOST_029 () at Wed Jun 29 10:48:20 2005
+ftpd | unknown | connection from REMOTE_HOST_029 () at Wed Jun 29 10:48:21 2005
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_030 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_030 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_030 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_030 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_030 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_030 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_030 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_030 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_030 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_030 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_030 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_030 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_030 user=USER_001 | authentication failure
+ftpd | unknown | connection from REMOTE_HOST_031 () at Wed Jun 29 14:44:35 2005
+ftpd | unknown | connection from REMOTE_HOST_031 () at Wed Jun 29 14:44:35 2005
+ftpd | unknown | connection from REMOTE_HOST_031 () at Wed Jun 29 14:44:35 2005
+ftpd | unknown | connection from REMOTE_HOST_031 () at Wed Jun 29 14:44:35 2005
+ftpd | unknown | connection from REMOTE_HOST_031 () at Wed Jun 29 14:44:35 2005
+ftpd | unknown | connection from REMOTE_HOST_031 () at Wed Jun 29 14:44:35 2005
+ftpd | unknown | connection from REMOTE_HOST_031 () at Wed Jun 29 14:44:35 2005
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_032 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_032 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_032 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_032 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_032 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_032 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_032 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_032 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_033 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_033 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_033 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_033 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_033 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_033 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_033 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_033 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_033 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_033 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_034 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_034 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_034 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_034 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_034 user=USER_001 | authentication failure
+klogind | unknown | Authentication failed from REMOTE_HOST_035 (REMOTE_HOST_035): Permission denied in replay cache code
+klogind | unknown | Kerberos authentication failed
+klogind | unknown | Authentication failed from REMOTE_HOST_035 (REMOTE_HOST_035): Permission denied in replay cache code
+klogind | unknown | Kerberos authentication failed
+klogind | unknown | Authentication failed from REMOTE_HOST_035 (REMOTE_HOST_035): Permission denied in replay cache code
+klogind | unknown | Kerberos authentication failed
+klogind | unknown | Authentication failed from REMOTE_HOST_035 (REMOTE_HOST_035): Permission denied in replay cache code
+klogind | unknown | Kerberos authentication failed
+klogind | unknown | Authentication failed from REMOTE_HOST_035 (REMOTE_HOST_035): Permission denied in replay cache code
+klogind | unknown | Kerberos authentication failed
+klogind | unknown | Authentication failed from REMOTE_HOST_035 (REMOTE_HOST_035): Permission denied in replay cache code
+klogind | unknown | Kerberos authentication failed
+klogind | unknown | Authentication failed from REMOTE_HOST_035 (REMOTE_HOST_035): Permission denied in replay cache code
+klogind | unknown | Authentication failed from REMOTE_HOST_035 (REMOTE_HOST_035): Permission denied in replay cache code
+klogind | unknown | Authentication failed from REMOTE_HOST_035 (REMOTE_HOST_035): Software caused connection abort
+klogind | unknown | Kerberos authentication failed
+klogind | unknown | Kerberos authentication failed
+klogind | unknown | Kerberos authentication failed
+klogind | unknown | Authentication failed from REMOTE_HOST_035 (REMOTE_HOST_035): Software caused connection abort
+klogind | unknown | Kerberos authentication failed
+klogind | unknown | Authentication failed from REMOTE_HOST_035 (REMOTE_HOST_035): Software caused connection abort
+klogind | unknown | Kerberos authentication failed
+klogind | unknown | Authentication failed from REMOTE_HOST_035 (REMOTE_HOST_035): Software caused connection abort
+klogind | unknown | Kerberos authentication failed
+klogind | unknown | Authentication failed from REMOTE_HOST_035 (REMOTE_HOST_035): Software caused connection abort
+klogind | unknown | Kerberos authentication failed
+klogind | unknown | Authentication failed from REMOTE_HOST_035 (REMOTE_HOST_035): Software caused connection abort
+klogind | unknown | Kerberos authentication failed
+klogind | unknown | Authentication failed from REMOTE_HOST_035 (REMOTE_HOST_035): Software caused connection abort
+klogind | unknown | Kerberos authentication failed
+klogind | unknown | Authentication failed from REMOTE_HOST_035 (REMOTE_HOST_035): Software caused connection abort
+klogind | unknown | Kerberos authentication failed
+klogind | unknown | Authentication failed from REMOTE_HOST_035 (REMOTE_HOST_035): Software caused connection abort
+klogind | unknown | Kerberos authentication failed
+klogind | unknown | Authentication failed from REMOTE_HOST_035 (REMOTE_HOST_035): Software caused connection abort
+klogind | unknown | Authentication failed from REMOTE_HOST_035 (REMOTE_HOST_035): Software caused connection abort
+klogind | unknown | Authentication failed from REMOTE_HOST_035 (REMOTE_HOST_035): Software caused connection abort
+klogind | unknown | Kerberos authentication failed
+klogind | unknown | Authentication failed from REMOTE_HOST_035 (REMOTE_HOST_035): Software caused connection abort
+klogind | unknown | Kerberos authentication failed
+klogind | unknown | Authentication failed from REMOTE_HOST_035 (REMOTE_HOST_035): Software caused connection abort
+klogind | unknown | Authentication failed from REMOTE_HOST_035 (REMOTE_HOST_035): Software caused connection abort
+klogind | unknown | Kerberos authentication failed
+klogind | unknown | Kerberos authentication failed
+klogind | unknown | Kerberos authentication failed
+klogind | unknown | Kerberos authentication failed
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_033 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_033 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_033 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_033 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_033 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_033 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_033 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_033 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_033 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_033 user=USER_001 | authentication failure
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Fri Jul  1 07:57:30 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Fri Jul  1 07:57:30 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Fri Jul  1 07:57:30 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Fri Jul  1 07:57:30 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Fri Jul  1 07:57:30 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Fri Jul  1 07:57:30 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Fri Jul  1 07:57:30 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Fri Jul  1 07:57:30 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Fri Jul  1 07:57:30 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Fri Jul  1 07:57:30 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Fri Jul  1 07:57:30 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Fri Jul  1 07:57:30 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Fri Jul  1 07:57:30 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Fri Jul  1 07:57:30 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Fri Jul  1 07:57:30 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Fri Jul  1 07:57:30 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Fri Jul  1 07:57:30 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Fri Jul  1 07:57:30 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Fri Jul  1 07:57:30 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Fri Jul  1 07:57:30 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Fri Jul  1 07:57:30 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Fri Jul  1 07:57:30 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Fri Jul  1 07:57:30 2005
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_034 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_034 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_034 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_034 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_034 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_034 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_034 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_034 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_034 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_034 user=USER_001 | authentication failure
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_037 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_037 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_037 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_037 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_037 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_037 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_037 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_037 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_037 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_037 | authentication failure
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+cups | unknown | cupsd shutdown succeeded
+cups | unknown | cupsd startup succeeded
+unknown | unknown | timestamp_format=bsd_syslog | Jul  3 04:08:03 HOST_001 syslogd 1.4.1: restart.
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul  3 10:05:25 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul  3 10:05:25 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul  3 10:05:25 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul  3 10:05:25 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul  3 10:05:25 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul  3 10:05:25 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul  3 10:05:25 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul  3 10:05:25 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul  3 10:05:25 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul  3 10:05:25 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul  3 10:05:25 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul  3 10:05:25 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul  3 10:05:25 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul  3 10:05:25 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul  3 10:05:25 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul  3 10:05:25 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul  3 10:05:25 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul  3 10:05:25 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul  3 10:05:25 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul  3 10:05:25 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul  3 10:05:25 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul  3 10:05:25 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul  3 10:05:25 2005
+ftpd | unknown | connection from REMOTE_HOST_040 (REMOTE_HOST_040.sh.interxion.inode.at) at Sun Jul  3 23:16:09 2005
+ftpd | unknown | connection from REMOTE_HOST_040 (REMOTE_HOST_040.sh.interxion.inode.at) at Sun Jul  3 23:16:09 2005
+ftpd | unknown | connection from REMOTE_HOST_040 (REMOTE_HOST_040.sh.interxion.inode.at) at Sun Jul  3 23:16:09 2005
+ftpd | unknown | connection from REMOTE_HOST_040 (REMOTE_HOST_040.sh.interxion.inode.at) at Sun Jul  3 23:16:09 2005
+ftpd | unknown | connection from REMOTE_HOST_040 (REMOTE_HOST_040.sh.interxion.inode.at) at Sun Jul  3 23:16:09 2005
+ftpd | unknown | connection from REMOTE_HOST_040 (REMOTE_HOST_040.sh.interxion.inode.at) at Sun Jul  3 23:16:09 2005
+ftpd | unknown | connection from REMOTE_HOST_040 (REMOTE_HOST_040.sh.interxion.inode.at) at Sun Jul  3 23:16:09 2005
+ftpd | unknown | connection from REMOTE_HOST_040 (REMOTE_HOST_040.sh.interxion.inode.at) at Sun Jul  3 23:16:09 2005
+ftpd | unknown | connection from REMOTE_HOST_040 (REMOTE_HOST_040.sh.interxion.inode.at) at Sun Jul  3 23:16:09 2005
+ftpd | unknown | connection from REMOTE_HOST_040 (REMOTE_HOST_040.sh.interxion.inode.at) at Sun Jul  3 23:16:09 2005
+ftpd | unknown | connection from REMOTE_HOST_040 (REMOTE_HOST_040.sh.interxion.inode.at) at Sun Jul  3 23:16:09 2005
+ftpd | unknown | connection from REMOTE_HOST_040 (REMOTE_HOST_040.sh.interxion.inode.at) at Sun Jul  3 23:16:09 2005
+ftpd | unknown | connection from REMOTE_HOST_040 (REMOTE_HOST_040.sh.interxion.inode.at) at Sun Jul  3 23:16:09 2005
+ftpd | unknown | connection from REMOTE_HOST_040 (REMOTE_HOST_040.sh.interxion.inode.at) at Sun Jul  3 23:16:09 2005
+ftpd | unknown | connection from REMOTE_HOST_040 (REMOTE_HOST_040.sh.interxion.inode.at) at Sun Jul  3 23:16:09 2005
+ftpd | unknown | connection from REMOTE_HOST_040 (REMOTE_HOST_040.sh.interxion.inode.at) at Sun Jul  3 23:16:09 2005
+ftpd | unknown | connection from REMOTE_HOST_040 (REMOTE_HOST_040.sh.interxion.inode.at) at Sun Jul  3 23:16:09 2005
+ftpd | unknown | connection from REMOTE_HOST_040 (REMOTE_HOST_040.sh.interxion.inode.at) at Sun Jul  3 23:16:09 2005
+ftpd | unknown | connection from REMOTE_HOST_040 (REMOTE_HOST_040.sh.interxion.inode.at) at Sun Jul  3 23:16:09 2005
+ftpd | unknown | connection from REMOTE_HOST_040 (REMOTE_HOST_040.sh.interxion.inode.at) at Sun Jul  3 23:16:09 2005
+ftpd | unknown | connection from REMOTE_HOST_040 (REMOTE_HOST_040.sh.interxion.inode.at) at Sun Jul  3 23:16:09 2005
+ftpd | unknown | connection from REMOTE_HOST_040 (REMOTE_HOST_040.sh.interxion.inode.at) at Sun Jul  3 23:16:09 2005
+ftpd | unknown | connection from REMOTE_HOST_040 (REMOTE_HOST_040.sh.interxion.inode.at) at Sun Jul  3 23:16:09 2005
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_041 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_041 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_041 user=USER_001 | authentication failure
+ftpd | unknown | connection from REMOTE_HOST_042 (adsl-63-197-98-106.dsl.mtry01.pacbell.net) at Mon Jul  4 12:52:44 2005
+ftpd | unknown | connection from REMOTE_HOST_042 (adsl-63-197-98-106.dsl.mtry01.pacbell.net) at Mon Jul  4 12:52:44 2005
+ftpd | unknown | connection from REMOTE_HOST_042 (adsl-63-197-98-106.dsl.mtry01.pacbell.net) at Mon Jul  4 12:52:44 2005
+ftpd | unknown | connection from REMOTE_HOST_042 (adsl-63-197-98-106.dsl.mtry01.pacbell.net) at Mon Jul  4 12:52:44 2005
+ftpd | unknown | connection from REMOTE_HOST_042 (adsl-63-197-98-106.dsl.mtry01.pacbell.net) at Mon Jul  4 12:52:44 2005
+ftpd | unknown | connection from REMOTE_HOST_042 (adsl-63-197-98-106.dsl.mtry01.pacbell.net) at Mon Jul  4 12:52:44 2005
+ftpd | unknown | connection from REMOTE_HOST_042 (adsl-63-197-98-106.dsl.mtry01.pacbell.net) at Mon Jul  4 12:52:44 2005
+ftpd | unknown | connection from REMOTE_HOST_042 (adsl-63-197-98-106.dsl.mtry01.pacbell.net) at Mon Jul  4 12:52:44 2005
+ftpd | unknown | connection from REMOTE_HOST_042 (adsl-63-197-98-106.dsl.mtry01.pacbell.net) at Mon Jul  4 12:52:44 2005
+ftpd | unknown | connection from REMOTE_HOST_042 (adsl-63-197-98-106.dsl.mtry01.pacbell.net) at Mon Jul  4 12:52:44 2005
+ftpd | unknown | connection from REMOTE_HOST_042 (adsl-63-197-98-106.dsl.mtry01.pacbell.net) at Mon Jul  4 12:52:44 2005
+ftpd | unknown | connection from REMOTE_HOST_042 (adsl-63-197-98-106.dsl.mtry01.pacbell.net) at Mon Jul  4 12:52:44 2005
+ftpd | unknown | connection from REMOTE_HOST_042 (adsl-63-197-98-106.dsl.mtry01.pacbell.net) at Mon Jul  4 12:52:44 2005
+ftpd | unknown | connection from REMOTE_HOST_042 (adsl-63-197-98-106.dsl.mtry01.pacbell.net) at Mon Jul  4 12:52:44 2005
+ftpd | unknown | connection from REMOTE_HOST_042 (adsl-63-197-98-106.dsl.mtry01.pacbell.net) at Mon Jul  4 12:52:44 2005
+ftpd | unknown | connection from REMOTE_HOST_042 (adsl-63-197-98-106.dsl.mtry01.pacbell.net) at Mon Jul  4 12:52:44 2005
+ftpd | unknown | connection from REMOTE_HOST_042 (adsl-63-197-98-106.dsl.mtry01.pacbell.net) at Mon Jul  4 12:52:44 2005
+ftpd | unknown | connection from REMOTE_HOST_042 (adsl-63-197-98-106.dsl.mtry01.pacbell.net) at Mon Jul  4 12:52:44 2005
+ftpd | unknown | connection from REMOTE_HOST_042 (adsl-63-197-98-106.dsl.mtry01.pacbell.net) at Mon Jul  4 12:52:44 2005
+ftpd | unknown | connection from REMOTE_HOST_042 (adsl-63-197-98-106.dsl.mtry01.pacbell.net) at Mon Jul  4 12:52:44 2005
+ftpd | unknown | connection from REMOTE_HOST_042 (adsl-63-197-98-106.dsl.mtry01.pacbell.net) at Mon Jul  4 12:52:44 2005
+ftpd | unknown | connection from REMOTE_HOST_042 (adsl-63-197-98-106.dsl.mtry01.pacbell.net) at Mon Jul  4 12:52:44 2005
+ftpd | unknown | connection from REMOTE_HOST_042 (adsl-63-197-98-106.dsl.mtry01.pacbell.net) at Mon Jul  4 12:52:44 2005
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_043 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_043 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_043 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_043 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_043 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_043 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_043 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_043 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_043 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_043 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_043 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_043 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_043 user=USER_001 | authentication failure
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_044 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_044 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_044 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_044 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_044 | authentication failure
+ftpd | unknown | connection from REMOTE_HOST_045 () at Tue Jul  5 13:52:21 2005
+ftpd | unknown | connection from REMOTE_HOST_045 () at Tue Jul  5 13:52:21 2005
+ftpd | unknown | connection from REMOTE_HOST_045 () at Tue Jul  5 13:52:21 2005
+ftpd | unknown | connection from REMOTE_HOST_045 () at Tue Jul  5 13:52:21 2005
+ftpd | unknown | connection from REMOTE_HOST_045 () at Tue Jul  5 13:52:21 2005
+ftpd | unknown | connection from REMOTE_HOST_045 () at Tue Jul  5 13:52:21 2005
+ftpd | unknown | connection from REMOTE_HOST_045 () at Tue Jul  5 13:52:21 2005
+ftpd | unknown | connection from REMOTE_HOST_045 () at Tue Jul  5 13:52:21 2005
+ftpd | unknown | connection from REMOTE_HOST_045 () at Tue Jul  5 13:52:21 2005
+ftpd | unknown | connection from REMOTE_HOST_045 () at Tue Jul  5 13:52:21 2005
+ftpd | unknown | connection from REMOTE_HOST_045 () at Tue Jul  5 13:52:21 2005
+ftpd | unknown | connection from REMOTE_HOST_045 () at Tue Jul  5 13:52:21 2005
+ftpd | unknown | connection from REMOTE_HOST_045 () at Tue Jul  5 13:52:21 2005
+ftpd | unknown | connection from REMOTE_HOST_045 () at Tue Jul  5 13:52:23 2005
+ftpd | unknown | connection from REMOTE_HOST_045 () at Tue Jul  5 13:52:23 2005
+ftpd | unknown | connection from REMOTE_HOST_045 () at Tue Jul  5 13:52:23 2005
+ftpd | unknown | connection from REMOTE_HOST_045 () at Tue Jul  5 13:52:23 2005
+ftpd | unknown | connection from REMOTE_HOST_045 () at Tue Jul  5 13:52:23 2005
+ftpd | unknown | connection from REMOTE_HOST_045 () at Tue Jul  5 13:52:23 2005
+ftpd | unknown | connection from REMOTE_HOST_045 () at Tue Jul  5 13:52:23 2005
+ftpd | unknown | connection from REMOTE_HOST_045 () at Tue Jul  5 13:52:23 2005
+ftpd | unknown | connection from REMOTE_HOST_045 () at Tue Jul  5 13:52:23 2005
+ftpd | unknown | connection from REMOTE_HOST_045 () at Tue Jul  5 13:52:23 2005
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_046 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_046 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_046 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_046 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_046 user=USER_001 | authentication failure
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+ftpd | unknown | connection from REMOTE_HOST_047 () at Wed Jul  6 18:00:56 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Wed Jul  6 18:00:56 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Wed Jul  6 18:00:56 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Wed Jul  6 18:00:56 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Wed Jul  6 18:00:56 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Wed Jul  6 18:00:56 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Wed Jul  6 18:00:56 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Wed Jul  6 18:00:56 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Wed Jul  6 18:00:56 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Wed Jul  6 18:00:56 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Wed Jul  6 18:00:56 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Wed Jul  6 18:00:56 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Wed Jul  6 18:00:56 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Wed Jul  6 18:00:56 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Wed Jul  6 18:00:56 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Wed Jul  6 18:00:56 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Wed Jul  6 18:00:56 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Wed Jul  6 18:00:56 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Wed Jul  6 18:00:56 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Wed Jul  6 18:00:56 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Wed Jul  6 18:00:56 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Wed Jul  6 18:00:57 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Wed Jul  6 18:00:57 2005
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+gpm | unknown | *** info [mice.c(1766)]:
+gpm | unknown | imps2: Auto-detected intellimouse PS/2
+login | session_opened | user=USER_001 | session opened for user USER_001 by LOGIN(uid=0)
+unknown | unknown | timestamp_format=bsd_syslog | Jul  7 08:06:15 HOST_001  -- USER_001[2421]: ROOT LOGIN ON tty2
+login | session_closed | user=USER_001 | session closed for user USER_001
+udev | unknown | removing device node '/udev/vcsa2'
+udev | unknown | removing device node '/udev/vcs2'
+udev | unknown | creating device node '/udev/vcs2'
+udev | unknown | creating device node '/udev/vcsa2'
+udev | unknown | removing device node '/udev/vcs2'
+udev | unknown | removing device node '/udev/vcsa2'
+udev | unknown | creating device node '/udev/vcs2'
+udev | unknown | creating device node '/udev/vcsa2'
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_048 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_048 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_048 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_048 | authentication failure
+ftpd | unknown | connection from REMOTE_HOST_036 () at Thu Jul  7 16:33:52 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Thu Jul  7 16:33:52 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Thu Jul  7 16:33:52 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Thu Jul  7 16:33:52 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Thu Jul  7 16:33:52 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Thu Jul  7 16:33:52 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Thu Jul  7 16:33:52 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Thu Jul  7 16:33:52 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Thu Jul  7 16:33:52 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Thu Jul  7 16:33:52 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Thu Jul  7 16:33:52 2005
+ftpd | unknown | connection from REMOTE_HOST_036 () at Thu Jul  7 16:33:52 2005
+ftpd | unknown | connection from REMOTE_HOST_049 () at Thu Jul  7 23:09:45 2005
+ftpd | unknown | connection from REMOTE_HOST_049 () at Thu Jul  7 23:09:45 2005
+ftpd | unknown | connection from REMOTE_HOST_049 () at Thu Jul  7 23:09:45 2005
+ftpd | unknown | connection from REMOTE_HOST_049 () at Thu Jul  7 23:09:45 2005
+ftpd | unknown | connection from REMOTE_HOST_049 () at Thu Jul  7 23:09:45 2005
+ftpd | unknown | connection from REMOTE_HOST_049 () at Thu Jul  7 23:09:45 2005
+ftpd | unknown | connection from REMOTE_HOST_049 () at Thu Jul  7 23:09:45 2005
+ftpd | unknown | connection from REMOTE_HOST_049 () at Thu Jul  7 23:09:45 2005
+ftpd | unknown | connection from REMOTE_HOST_049 () at Thu Jul  7 23:09:45 2005
+ftpd | unknown | connection from REMOTE_HOST_049 () at Thu Jul  7 23:09:45 2005
+ftpd | unknown | connection from REMOTE_HOST_049 () at Thu Jul  7 23:09:45 2005
+ftpd | unknown | connection from REMOTE_HOST_049 () at Thu Jul  7 23:09:45 2005
+ftpd | unknown | connection from REMOTE_HOST_049 () at Thu Jul  7 23:09:45 2005
+ftpd | unknown | connection from REMOTE_HOST_049 () at Thu Jul  7 23:09:45 2005
+ftpd | unknown | connection from REMOTE_HOST_049 () at Thu Jul  7 23:09:45 2005
+ftpd | unknown | connection from REMOTE_HOST_049 () at Thu Jul  7 23:09:45 2005
+ftpd | unknown | connection from REMOTE_HOST_049 () at Thu Jul  7 23:09:45 2005
+ftpd | unknown | connection from REMOTE_HOST_049 () at Thu Jul  7 23:09:47 2005
+ftpd | unknown | connection from REMOTE_HOST_049 () at Thu Jul  7 23:09:50 2005
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_050 user=USER_005 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_050 user=USER_005 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_050 user=USER_005 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_050 user=USER_005 | authentication failure
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+ftpd | unknown | connection from REMOTE_HOST_051 () at Sat Jul  9 11:35:59 2005
+ftpd | unknown | connection from REMOTE_HOST_051 () at Sat Jul  9 11:35:59 2005
+ftpd | unknown | connection from REMOTE_HOST_051 () at Sat Jul  9 11:35:59 2005
+ftpd | unknown | connection from REMOTE_HOST_051 () at Sat Jul  9 11:35:59 2005
+ftpd | unknown | connection from REMOTE_HOST_051 () at Sat Jul  9 11:35:59 2005
+ftpd | unknown | connection from REMOTE_HOST_051 () at Sat Jul  9 11:35:59 2005
+ftpd | unknown | connection from REMOTE_HOST_051 () at Sat Jul  9 11:35:59 2005
+ftpd | unknown | connection from REMOTE_HOST_051 () at Sat Jul  9 11:35:59 2005
+ftpd | unknown | connection from REMOTE_HOST_051 () at Sat Jul  9 11:35:59 2005
+ftpd | unknown | connection from REMOTE_HOST_051 () at Sat Jul  9 11:35:59 2005
+ftpd | unknown | connection from REMOTE_HOST_051 () at Sat Jul  9 11:35:59 2005
+ftpd | unknown | connection from REMOTE_HOST_051 () at Sat Jul  9 11:35:59 2005
+ftpd | unknown | connection from REMOTE_HOST_051 () at Sat Jul  9 11:35:59 2005
+ftpd | unknown | connection from REMOTE_HOST_051 () at Sat Jul  9 11:35:59 2005
+ftpd | unknown | connection from REMOTE_HOST_051 () at Sat Jul  9 11:35:59 2005
+ftpd | unknown | connection from REMOTE_HOST_051 () at Sat Jul  9 11:35:59 2005
+ftpd | unknown | connection from REMOTE_HOST_051 () at Sat Jul  9 11:35:59 2005
+ftpd | unknown | connection from REMOTE_HOST_051 () at Sat Jul  9 11:35:59 2005
+ftpd | unknown | connection from REMOTE_HOST_051 () at Sat Jul  9 11:35:59 2005
+ftpd | unknown | connection from REMOTE_HOST_051 () at Sat Jul  9 11:35:59 2005
+ftpd | unknown | connection from REMOTE_HOST_051 () at Sat Jul  9 11:35:59 2005
+ftpd | unknown | connection from REMOTE_HOST_051 () at Sat Jul  9 11:35:59 2005
+ftpd | unknown | connection from REMOTE_HOST_051 () at Sat Jul  9 11:35:59 2005
+ftpd | unknown | connection from REMOTE_HOST_022 () at Sat Jul  9 12:16:49 2005
+ftpd | unknown | connection from REMOTE_HOST_022 () at Sat Jul  9 12:16:49 2005
+ftpd | unknown | connection from REMOTE_HOST_022 () at Sat Jul  9 12:16:49 2005
+ftpd | unknown | connection from REMOTE_HOST_022 () at Sat Jul  9 12:16:49 2005
+ftpd | unknown | connection from REMOTE_HOST_022 () at Sat Jul  9 12:16:49 2005
+ftpd | unknown | connection from REMOTE_HOST_022 () at Sat Jul  9 12:16:49 2005
+ftpd | unknown | connection from REMOTE_HOST_022 () at Sat Jul  9 12:16:49 2005
+ftpd | unknown | connection from REMOTE_HOST_022 () at Sat Jul  9 12:16:49 2005
+ftpd | unknown | connection from REMOTE_HOST_022 () at Sat Jul  9 12:16:49 2005
+ftpd | unknown | connection from REMOTE_HOST_022 () at Sat Jul  9 12:16:49 2005
+ftpd | unknown | connection from REMOTE_HOST_022 () at Sat Jul  9 12:16:49 2005
+ftpd | unknown | connection from REMOTE_HOST_022 () at Sat Jul  9 12:16:51 2005
+ftpd | unknown | connection from REMOTE_HOST_022 () at Sat Jul  9 12:16:51 2005
+ftpd | unknown | connection from REMOTE_HOST_022 () at Sat Jul  9 12:16:51 2005
+ftpd | unknown | connection from REMOTE_HOST_022 () at Sat Jul  9 12:16:51 2005
+ftpd | unknown | connection from REMOTE_HOST_022 () at Sat Jul  9 12:16:51 2005
+ftpd | unknown | connection from REMOTE_HOST_022 () at Sat Jul  9 12:16:52 2005
+ftpd | unknown | connection from REMOTE_HOST_022 () at Sat Jul  9 12:16:52 2005
+ftpd | unknown | connection from REMOTE_HOST_052 () at Sat Jul  9 12:59:44 2005
+ftpd | unknown | connection from REMOTE_HOST_052 () at Sat Jul  9 12:59:44 2005
+ftpd | unknown | connection from REMOTE_HOST_052 () at Sat Jul  9 12:59:44 2005
+ftpd | unknown | connection from REMOTE_HOST_052 () at Sat Jul  9 12:59:44 2005
+ftpd | unknown | connection from REMOTE_HOST_052 () at Sat Jul  9 12:59:44 2005
+ftpd | unknown | connection from REMOTE_HOST_052 () at Sat Jul  9 12:59:44 2005
+ftpd | unknown | connection from REMOTE_HOST_052 () at Sat Jul  9 12:59:44 2005
+ftpd | unknown | connection from REMOTE_HOST_052 () at Sat Jul  9 12:59:44 2005
+ftpd | unknown | connection from REMOTE_HOST_052 () at Sat Jul  9 12:59:44 2005
+ftpd | unknown | connection from REMOTE_HOST_052 () at Sat Jul  9 12:59:44 2005
+ftpd | unknown | connection from REMOTE_HOST_052 () at Sat Jul  9 12:59:44 2005
+ftpd | unknown | connection from REMOTE_HOST_052 () at Sat Jul  9 12:59:44 2005
+ftpd | unknown | connection from REMOTE_HOST_052 () at Sat Jul  9 12:59:44 2005
+ftpd | unknown | connection from REMOTE_HOST_052 () at Sat Jul  9 12:59:44 2005
+ftpd | unknown | connection from REMOTE_HOST_052 () at Sat Jul  9 12:59:44 2005
+ftpd | unknown | connection from REMOTE_HOST_052 () at Sat Jul  9 12:59:44 2005
+ftpd | unknown | connection from REMOTE_HOST_052 () at Sat Jul  9 12:59:44 2005
+ftpd | unknown | connection from REMOTE_HOST_052 () at Sat Jul  9 12:59:44 2005
+ftpd | unknown | connection from REMOTE_HOST_052 () at Sat Jul  9 12:59:45 2005
+ftpd | unknown | connection from REMOTE_HOST_052 () at Sat Jul  9 12:59:45 2005
+ftpd | unknown | connection from REMOTE_HOST_052 () at Sat Jul  9 12:59:45 2005
+ftpd | unknown | connection from REMOTE_HOST_052 () at Sat Jul  9 12:59:45 2005
+ftpd | unknown | connection from REMOTE_HOST_052 () at Sat Jul  9 12:59:45 2005
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_053 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_053 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_053 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_053 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_053 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_053 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_053 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_053 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_053 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_053 user=USER_001 | authentication failure
+ftpd | unknown | connection from REMOTE_HOST_054 (host129.206.196.21.maximumasp.com) at Sat Jul  9 22:53:19 2005
+ftpd | unknown | connection from REMOTE_HOST_054 (host129.206.196.21.maximumasp.com) at Sat Jul  9 22:53:19 2005
+ftpd | unknown | connection from REMOTE_HOST_054 (host129.206.196.21.maximumasp.com) at Sat Jul  9 22:53:19 2005
+ftpd | unknown | connection from REMOTE_HOST_054 (host129.206.196.21.maximumasp.com) at Sat Jul  9 22:53:19 2005
+ftpd | unknown | connection from REMOTE_HOST_054 (host129.206.196.21.maximumasp.com) at Sat Jul  9 22:53:19 2005
+ftpd | unknown | connection from REMOTE_HOST_054 (host129.206.196.21.maximumasp.com) at Sat Jul  9 22:53:19 2005
+ftpd | unknown | connection from REMOTE_HOST_054 (host129.206.196.21.maximumasp.com) at Sat Jul  9 22:53:22 2005
+ftpd | unknown | connection from REMOTE_HOST_054 (host129.206.196.21.maximumasp.com) at Sat Jul  9 22:53:22 2005
+ftpd | unknown | connection from REMOTE_HOST_054 (host129.206.196.21.maximumasp.com) at Sat Jul  9 22:53:22 2005
+ftpd | unknown | connection from REMOTE_HOST_054 (host129.206.196.21.maximumasp.com) at Sat Jul  9 22:53:22 2005
+ftpd | unknown | connection from REMOTE_HOST_054 (host129.206.196.21.maximumasp.com) at Sat Jul  9 22:53:22 2005
+ftpd | unknown | connection from REMOTE_HOST_054 (host129.206.196.21.maximumasp.com) at Sat Jul  9 22:53:22 2005
+ftpd | unknown | connection from REMOTE_HOST_054 (host129.206.196.21.maximumasp.com) at Sat Jul  9 22:53:22 2005
+ftpd | unknown | connection from REMOTE_HOST_054 (host129.206.196.21.maximumasp.com) at Sat Jul  9 22:53:22 2005
+ftpd | unknown | connection from REMOTE_HOST_054 (host129.206.196.21.maximumasp.com) at Sat Jul  9 22:53:22 2005
+ftpd | unknown | connection from REMOTE_HOST_054 (host129.206.196.21.maximumasp.com) at Sat Jul  9 22:53:22 2005
+ftpd | unknown | connection from REMOTE_HOST_054 (host129.206.196.21.maximumasp.com) at Sat Jul  9 22:53:22 2005
+ftpd | unknown | connection from REMOTE_HOST_054 (host129.206.196.21.maximumasp.com) at Sat Jul  9 22:53:22 2005
+ftpd | unknown | connection from REMOTE_HOST_054 (host129.206.196.21.maximumasp.com) at Sat Jul  9 22:53:22 2005
+ftpd | unknown | connection from REMOTE_HOST_054 (host129.206.196.21.maximumasp.com) at Sat Jul  9 22:53:22 2005
+ftpd | unknown | connection from REMOTE_HOST_054 (host129.206.196.21.maximumasp.com) at Sat Jul  9 22:53:22 2005
+ftpd | unknown | connection from REMOTE_HOST_054 (host129.206.196.21.maximumasp.com) at Sat Jul  9 22:53:22 2005
+ftpd | unknown | connection from REMOTE_HOST_054 (host129.206.196.21.maximumasp.com) at Sat Jul  9 22:53:22 2005
+ftpd | unknown | connection from REMOTE_HOST_055 () at Sun Jul 10 03:55:15 2005
+ftpd | unknown | connection from REMOTE_HOST_055 () at Sun Jul 10 03:55:15 2005
+ftpd | unknown | connection from REMOTE_HOST_055 () at Sun Jul 10 03:55:15 2005
+ftpd | unknown | connection from REMOTE_HOST_055 () at Sun Jul 10 03:55:15 2005
+ftpd | unknown | connection from REMOTE_HOST_055 () at Sun Jul 10 03:55:15 2005
+ftpd | unknown | connection from REMOTE_HOST_055 () at Sun Jul 10 03:55:15 2005
+ftpd | unknown | connection from REMOTE_HOST_055 () at Sun Jul 10 03:55:15 2005
+ftpd | unknown | connection from REMOTE_HOST_055 () at Sun Jul 10 03:55:15 2005
+ftpd | unknown | connection from REMOTE_HOST_055 () at Sun Jul 10 03:55:15 2005
+ftpd | unknown | connection from REMOTE_HOST_055 () at Sun Jul 10 03:55:15 2005
+ftpd | unknown | connection from REMOTE_HOST_055 () at Sun Jul 10 03:55:15 2005
+ftpd | unknown | connection from REMOTE_HOST_055 () at Sun Jul 10 03:55:15 2005
+ftpd | unknown | connection from REMOTE_HOST_055 () at Sun Jul 10 03:55:15 2005
+ftpd | unknown | connection from REMOTE_HOST_055 () at Sun Jul 10 03:55:15 2005
+ftpd | unknown | connection from REMOTE_HOST_055 () at Sun Jul 10 03:55:15 2005
+ftpd | unknown | connection from REMOTE_HOST_055 () at Sun Jul 10 03:55:15 2005
+ftpd | unknown | connection from REMOTE_HOST_055 () at Sun Jul 10 03:55:15 2005
+ftpd | unknown | connection from REMOTE_HOST_055 () at Sun Jul 10 03:55:15 2005
+ftpd | unknown | connection from REMOTE_HOST_055 () at Sun Jul 10 03:55:15 2005
+ftpd | unknown | connection from REMOTE_HOST_055 () at Sun Jul 10 03:55:15 2005
+ftpd | unknown | connection from REMOTE_HOST_055 () at Sun Jul 10 03:55:15 2005
+ftpd | unknown | connection from REMOTE_HOST_055 () at Sun Jul 10 03:55:15 2005
+ftpd | unknown | connection from REMOTE_HOST_055 () at Sun Jul 10 03:55:15 2005
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+cups | unknown | cupsd shutdown succeeded
+cups | unknown | cupsd startup succeeded
+unknown | unknown | timestamp_format=bsd_syslog | Jul 10 04:04:46 HOST_001 syslogd 1.4.1: restart.
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+ftpd | unknown | connection from REMOTE_HOST_056 (dsl-082-083-227-067.arcor-ip.net) at Sun Jul 10 07:24:24 2005
+ftpd | unknown | connection from REMOTE_HOST_056 (dsl-082-083-227-067.arcor-ip.net) at Sun Jul 10 07:24:24 2005
+ftpd | unknown | connection from REMOTE_HOST_056 (dsl-082-083-227-067.arcor-ip.net) at Sun Jul 10 07:24:24 2005
+ftpd | unknown | connection from REMOTE_HOST_056 (dsl-082-083-227-067.arcor-ip.net) at Sun Jul 10 07:24:24 2005
+ftpd | unknown | connection from REMOTE_HOST_056 (dsl-082-083-227-067.arcor-ip.net) at Sun Jul 10 07:24:24 2005
+ftpd | unknown | connection from REMOTE_HOST_056 (dsl-082-083-227-067.arcor-ip.net) at Sun Jul 10 07:24:24 2005
+ftpd | unknown | connection from REMOTE_HOST_056 (dsl-082-083-227-067.arcor-ip.net) at Sun Jul 10 07:24:24 2005
+ftpd | unknown | connection from REMOTE_HOST_056 (dsl-082-083-227-067.arcor-ip.net) at Sun Jul 10 07:24:24 2005
+ftpd | unknown | connection from REMOTE_HOST_056 (dsl-082-083-227-067.arcor-ip.net) at Sun Jul 10 07:24:24 2005
+ftpd | unknown | connection from REMOTE_HOST_056 (dsl-082-083-227-067.arcor-ip.net) at Sun Jul 10 07:24:24 2005
+ftpd | unknown | connection from REMOTE_HOST_056 (dsl-082-083-227-067.arcor-ip.net) at Sun Jul 10 07:24:24 2005
+ftpd | unknown | connection from REMOTE_HOST_056 (dsl-082-083-227-067.arcor-ip.net) at Sun Jul 10 07:24:34 2005
+ftpd | unknown | connection from REMOTE_HOST_056 (dsl-082-083-227-067.arcor-ip.net) at Sun Jul 10 07:24:34 2005
+ftpd | unknown | connection from REMOTE_HOST_056 (dsl-082-083-227-067.arcor-ip.net) at Sun Jul 10 07:24:34 2005
+ftpd | unknown | connection from REMOTE_HOST_056 (dsl-082-083-227-067.arcor-ip.net) at Sun Jul 10 07:24:34 2005
+ftpd | unknown | connection from REMOTE_HOST_056 (dsl-082-083-227-067.arcor-ip.net) at Sun Jul 10 07:24:34 2005
+ftpd | unknown | connection from REMOTE_HOST_056 (dsl-082-083-227-067.arcor-ip.net) at Sun Jul 10 07:24:34 2005
+ftpd | unknown | connection from REMOTE_HOST_056 (dsl-082-083-227-067.arcor-ip.net) at Sun Jul 10 07:24:34 2005
+ftpd | unknown | connection from REMOTE_HOST_056 (dsl-082-083-227-067.arcor-ip.net) at Sun Jul 10 07:24:34 2005
+ftpd | unknown | connection from REMOTE_HOST_056 (dsl-082-083-227-067.arcor-ip.net) at Sun Jul 10 07:24:34 2005
+ftpd | unknown | connection from REMOTE_HOST_056 (dsl-082-083-227-067.arcor-ip.net) at Sun Jul 10 07:24:34 2005
+ftpd | unknown | connection from REMOTE_HOST_056 (dsl-082-083-227-067.arcor-ip.net) at Sun Jul 10 07:24:34 2005
+ftpd | unknown | connection from REMOTE_HOST_056 (dsl-082-083-227-067.arcor-ip.net) at Sun Jul 10 07:24:34 2005
+ftpd | unknown | connection from REMOTE_HOST_057 () at Sun Jul 10 13:17:22 2005
+ftpd | unknown | connection from REMOTE_HOST_057 () at Sun Jul 10 13:17:22 2005
+ftpd | unknown | connection from REMOTE_HOST_057 () at Sun Jul 10 13:17:22 2005
+ftpd | unknown | connection from REMOTE_HOST_057 () at Sun Jul 10 13:17:22 2005
+ftpd | unknown | connection from REMOTE_HOST_057 () at Sun Jul 10 13:17:22 2005
+ftpd | unknown | connection from REMOTE_HOST_057 () at Sun Jul 10 13:17:22 2005
+ftpd | unknown | connection from REMOTE_HOST_057 () at Sun Jul 10 13:17:22 2005
+ftpd | unknown | connection from REMOTE_HOST_057 () at Sun Jul 10 13:17:22 2005
+ftpd | unknown | connection from REMOTE_HOST_057 () at Sun Jul 10 13:17:22 2005
+ftpd | unknown | connection from REMOTE_HOST_057 () at Sun Jul 10 13:17:22 2005
+ftpd | unknown | connection from REMOTE_HOST_057 () at Sun Jul 10 13:17:22 2005
+ftpd | unknown | connection from REMOTE_HOST_057 () at Sun Jul 10 13:17:22 2005
+ftpd | unknown | connection from REMOTE_HOST_057 () at Sun Jul 10 13:17:22 2005
+ftpd | unknown | connection from REMOTE_HOST_057 () at Sun Jul 10 13:17:22 2005
+ftpd | unknown | connection from REMOTE_HOST_057 () at Sun Jul 10 13:17:22 2005
+ftpd | unknown | connection from REMOTE_HOST_057 () at Sun Jul 10 13:17:22 2005
+ftpd | unknown | connection from REMOTE_HOST_057 () at Sun Jul 10 13:17:22 2005
+ftpd | unknown | connection from REMOTE_HOST_057 () at Sun Jul 10 13:17:22 2005
+ftpd | unknown | connection from REMOTE_HOST_057 () at Sun Jul 10 13:17:22 2005
+ftpd | unknown | connection from REMOTE_HOST_057 () at Sun Jul 10 13:17:22 2005
+ftpd | unknown | connection from REMOTE_HOST_057 () at Sun Jul 10 13:17:22 2005
+ftpd | unknown | connection from REMOTE_HOST_057 () at Sun Jul 10 13:17:22 2005
+ftpd | unknown | connection from REMOTE_HOST_057 () at Sun Jul 10 13:17:22 2005
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_058 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_059 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_059 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_059 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_059 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_059 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_059 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_059 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_059 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_059 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_059 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_060 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_060 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_060 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_060 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_060 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_060 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_060 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_060 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_060 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_060 user=USER_001 | authentication failure
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+gdm | unknown | check pass; user unknown
+gdm | authentication_failure | uid=0 euid=0 tty=:0 | authentication failure
+gdm-binary | unknown | Couldn't authenticate user
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_061 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_061 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_061 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_061 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_061 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_061 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_061 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_061 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_061 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_061 user=USER_001 | authentication failure
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_062 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_062 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_062 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_062 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_062 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_062 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_062 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_062 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_062 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_062 user=USER_001 | authentication failure
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+sshd | session_opened | user=USER_005 | session opened for user USER_005 by (uid=509)
+sshd | session_closed | user=USER_005 | session closed for user USER_005
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_063 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_063 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_063 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_063 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_063 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_063 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_063 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_063 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_064 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_064 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_064 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_064 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_064 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_064 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_064 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_064 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_064 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_064 user=USER_001 | authentication failure
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+ftpd | unknown | connection from REMOTE_HOST_065 () at Fri Jul 15 23:42:43 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Fri Jul 15 23:42:43 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Fri Jul 15 23:42:43 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Fri Jul 15 23:42:43 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Fri Jul 15 23:42:43 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Fri Jul 15 23:42:43 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Fri Jul 15 23:42:43 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Fri Jul 15 23:42:43 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Fri Jul 15 23:42:43 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Fri Jul 15 23:42:43 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Fri Jul 15 23:42:43 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Fri Jul 15 23:42:43 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Fri Jul 15 23:42:43 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Fri Jul 15 23:42:43 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Fri Jul 15 23:42:43 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Fri Jul 15 23:42:43 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Fri Jul 15 23:42:43 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Fri Jul 15 23:42:43 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Fri Jul 15 23:42:43 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Fri Jul 15 23:42:43 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Fri Jul 15 23:42:43 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Fri Jul 15 23:42:44 2005
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+ftpd | unknown | connection from REMOTE_HOST_066 () at Sat Jul 16 08:14:04 2005
+ftpd | unknown | connection from REMOTE_HOST_066 () at Sat Jul 16 08:14:04 2005
+ftpd | unknown | connection from REMOTE_HOST_066 () at Sat Jul 16 08:14:04 2005
+ftpd | unknown | connection from REMOTE_HOST_066 () at Sat Jul 16 08:14:07 2005
+ftpd | unknown | connection from REMOTE_HOST_066 () at Sat Jul 16 08:14:07 2005
+ftpd | unknown | connection from REMOTE_HOST_066 () at Sat Jul 16 08:14:07 2005
+ftpd | unknown | connection from REMOTE_HOST_066 () at Sat Jul 16 08:14:07 2005
+ftpd | unknown | connection from REMOTE_HOST_066 () at Sat Jul 16 08:14:07 2005
+ftpd | unknown | connection from REMOTE_HOST_066 () at Sat Jul 16 08:14:07 2005
+ftpd | unknown | connection from REMOTE_HOST_066 () at Sat Jul 16 08:14:07 2005
+ftpd | unknown | connection from REMOTE_HOST_066 () at Sat Jul 16 08:14:07 2005
+ftpd | unknown | connection from REMOTE_HOST_066 () at Sat Jul 16 08:14:07 2005
+ftpd | unknown | connection from REMOTE_HOST_066 () at Sat Jul 16 08:14:07 2005
+ftpd | unknown | connection from REMOTE_HOST_066 () at Sat Jul 16 08:14:07 2005
+ftpd | unknown | connection from REMOTE_HOST_066 () at Sat Jul 16 08:14:07 2005
+ftpd | unknown | connection from REMOTE_HOST_066 () at Sat Jul 16 08:14:07 2005
+ftpd | unknown | connection from REMOTE_HOST_066 () at Sat Jul 16 08:14:07 2005
+ftpd | unknown | connection from REMOTE_HOST_066 () at Sat Jul 16 08:14:07 2005
+ftpd | unknown | connection from REMOTE_HOST_066 () at Sat Jul 16 08:14:07 2005
+ftpd | unknown | connection from REMOTE_HOST_066 () at Sat Jul 16 08:14:07 2005
+ftpd | unknown | connection from REMOTE_HOST_066 () at Sat Jul 16 08:14:07 2005
+ftpd | unknown | connection from REMOTE_HOST_066 () at Sat Jul 16 08:14:07 2005
+ftpd | unknown | connection from REMOTE_HOST_066 () at Sat Jul 16 08:14:07 2005
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 04:06:32 2005
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 04:06:32 2005
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+cups | unknown | cupsd shutdown succeeded
+cups | unknown | cupsd startup succeeded
+unknown | unknown | timestamp_format=bsd_syslog | Jul 17 04:08:23 HOST_001 syslogd 1.4.1: restart.
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 06:13:37 2005
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 06:13:37 2005
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 06:13:37 2005
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 06:13:37 2005
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 06:13:37 2005
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 06:13:37 2005
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 06:13:37 2005
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 06:13:37 2005
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 06:13:37 2005
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 06:13:37 2005
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 06:13:37 2005
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 06:13:37 2005
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 06:13:37 2005
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 06:13:37 2005
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 06:13:38 2005
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 06:13:38 2005
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 06:13:38 2005
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 06:13:38 2005
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 06:13:38 2005
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 06:14:36 2005
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 06:14:36 2005
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 06:14:36 2005
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 06:14:36 2005
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 06:14:36 2005
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 06:14:36 2005
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 06:14:36 2005
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 06:14:36 2005
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 06:14:36 2005
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 06:14:36 2005
+ftpd | unknown | connection from REMOTE_HOST_067 (aml-sfh-3310b.adsl.wanadoo.nl) at Sun Jul 17 06:14:36 2005
+ftpd | unknown | connection from REMOTE_HOST_068 () at Sun Jul 17 08:06:12 2005
+ftpd | unknown | connection from REMOTE_HOST_068 () at Sun Jul 17 08:06:12 2005
+ftpd | unknown | connection from REMOTE_HOST_068 () at Sun Jul 17 08:06:12 2005
+ftpd | unknown | connection from REMOTE_HOST_068 () at Sun Jul 17 08:06:12 2005
+ftpd | unknown | connection from REMOTE_HOST_068 () at Sun Jul 17 08:06:12 2005
+ftpd | unknown | connection from REMOTE_HOST_068 () at Sun Jul 17 08:06:12 2005
+ftpd | unknown | connection from REMOTE_HOST_068 () at Sun Jul 17 08:06:12 2005
+ftpd | unknown | connection from REMOTE_HOST_068 () at Sun Jul 17 08:06:12 2005
+ftpd | unknown | connection from REMOTE_HOST_068 () at Sun Jul 17 08:06:12 2005
+ftpd | unknown | connection from REMOTE_HOST_068 () at Sun Jul 17 08:06:12 2005
+ftpd | unknown | connection from REMOTE_HOST_068 () at Sun Jul 17 08:06:12 2005
+ftpd | unknown | connection from REMOTE_HOST_068 () at Sun Jul 17 08:06:12 2005
+ftpd | unknown | connection from REMOTE_HOST_068 () at Sun Jul 17 08:06:12 2005
+ftpd | unknown | connection from REMOTE_HOST_068 () at Sun Jul 17 08:06:12 2005
+ftpd | unknown | connection from REMOTE_HOST_068 () at Sun Jul 17 08:06:12 2005
+ftpd | unknown | connection from REMOTE_HOST_068 () at Sun Jul 17 08:06:12 2005
+ftpd | unknown | connection from REMOTE_HOST_068 () at Sun Jul 17 08:06:12 2005
+ftpd | unknown | connection from REMOTE_HOST_068 () at Sun Jul 17 08:06:12 2005
+ftpd | unknown | connection from REMOTE_HOST_068 () at Sun Jul 17 08:06:12 2005
+ftpd | unknown | connection from REMOTE_HOST_068 () at Sun Jul 17 08:06:12 2005
+ftpd | unknown | connection from REMOTE_HOST_068 () at Sun Jul 17 08:06:12 2005
+ftpd | unknown | connection from REMOTE_HOST_068 () at Sun Jul 17 08:06:12 2005
+ftpd | unknown | connection from REMOTE_HOST_068 () at Sun Jul 17 08:06:14 2005
+ftpd | unknown | connection from REMOTE_HOST_015 () at Sun Jul 17 09:44:07 2005
+ftpd | unknown | connection from REMOTE_HOST_015 () at Sun Jul 17 09:44:07 2005
+ftpd | unknown | connection from REMOTE_HOST_015 () at Sun Jul 17 09:44:07 2005
+ftpd | unknown | connection from REMOTE_HOST_015 () at Sun Jul 17 09:44:07 2005
+ftpd | unknown | connection from REMOTE_HOST_015 () at Sun Jul 17 09:44:07 2005
+ftpd | unknown | connection from REMOTE_HOST_015 () at Sun Jul 17 09:44:07 2005
+ftpd | unknown | connection from REMOTE_HOST_015 () at Sun Jul 17 09:44:07 2005
+ftpd | unknown | connection from REMOTE_HOST_015 () at Sun Jul 17 09:44:07 2005
+ftpd | unknown | connection from REMOTE_HOST_015 () at Sun Jul 17 09:44:07 2005
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_069 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_069 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_069 user=USER_001 | authentication failure
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 12:30:35 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 12:30:37 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 12:30:42 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 12:30:43 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 12:30:43 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 12:30:46 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 12:30:47 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 12:30:48 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 12:30:48 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 12:30:51 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 12:30:53 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 12:30:53 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 12:30:54 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 12:30:57 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 12:30:57 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 12:30:58 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 12:30:58 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 12:30:58 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 12:30:59 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 12:30:59 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 12:30:59 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 12:31:00 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 12:31:04 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 14:02:39 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 14:02:43 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 14:02:43 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 14:02:44 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 14:02:47 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 14:02:48 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 14:02:49 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 14:02:49 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 14:02:49 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 14:02:49 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 14:02:54 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 14:02:54 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 14:02:54 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 14:02:55 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 14:02:57 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 14:02:59 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 14:02:59 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 14:03:00 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 14:03:00 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 14:03:00 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 14:03:04 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 14:03:04 2005
+ftpd | unknown | connection from REMOTE_HOST_070 (host8.topspot.net) at Sun Jul 17 14:03:05 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul 17 15:09:15 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul 17 15:09:15 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul 17 15:09:15 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul 17 15:09:15 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul 17 15:09:15 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul 17 15:09:15 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul 17 15:09:15 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul 17 15:09:15 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul 17 15:09:15 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul 17 15:09:15 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul 17 15:09:15 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul 17 15:09:15 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul 17 15:09:15 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul 17 15:09:15 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul 17 15:09:15 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul 17 15:09:15 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul 17 15:09:15 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul 17 15:09:15 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul 17 15:09:16 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul 17 15:09:16 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul 17 15:09:16 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul 17 15:09:16 2005
+ftpd | unknown | connection from REMOTE_HOST_038 (dsl-Chn-static-REMOTE_HOST_039.touchtelindia.net) at Sun Jul 17 15:09:17 2005
+ftpd | unknown | connection from REMOTE_HOST_071 (82-68-222-194.dsl.in-addr.zen.co.uk) at Sun Jul 17 21:23:20 2005
+ftpd | unknown | connection from REMOTE_HOST_071 (82-68-222-194.dsl.in-addr.zen.co.uk) at Sun Jul 17 21:23:20 2005
+ftpd | unknown | connection from REMOTE_HOST_071 (82-68-222-194.dsl.in-addr.zen.co.uk) at Sun Jul 17 21:23:20 2005
+ftpd | unknown | connection from REMOTE_HOST_071 (82-68-222-194.dsl.in-addr.zen.co.uk) at Sun Jul 17 21:23:20 2005
+ftpd | unknown | connection from REMOTE_HOST_071 (82-68-222-194.dsl.in-addr.zen.co.uk) at Sun Jul 17 21:23:20 2005
+ftpd | unknown | connection from REMOTE_HOST_071 (82-68-222-194.dsl.in-addr.zen.co.uk) at Sun Jul 17 21:23:20 2005
+ftpd | unknown | connection from REMOTE_HOST_071 (82-68-222-194.dsl.in-addr.zen.co.uk) at Sun Jul 17 21:23:20 2005
+ftpd | unknown | connection from REMOTE_HOST_071 (82-68-222-194.dsl.in-addr.zen.co.uk) at Sun Jul 17 21:23:20 2005
+ftpd | unknown | connection from REMOTE_HOST_071 (82-68-222-194.dsl.in-addr.zen.co.uk) at Sun Jul 17 21:23:20 2005
+ftpd | unknown | connection from REMOTE_HOST_071 (82-68-222-194.dsl.in-addr.zen.co.uk) at Sun Jul 17 21:23:20 2005
+ftpd | unknown | connection from REMOTE_HOST_071 (82-68-222-194.dsl.in-addr.zen.co.uk) at Sun Jul 17 21:23:20 2005
+ftpd | unknown | connection from REMOTE_HOST_071 (82-68-222-194.dsl.in-addr.zen.co.uk) at Sun Jul 17 21:23:20 2005
+ftpd | unknown | connection from REMOTE_HOST_071 (82-68-222-194.dsl.in-addr.zen.co.uk) at Sun Jul 17 21:23:20 2005
+ftpd | unknown | connection from REMOTE_HOST_071 (82-68-222-194.dsl.in-addr.zen.co.uk) at Sun Jul 17 21:23:20 2005
+ftpd | unknown | connection from REMOTE_HOST_071 (82-68-222-194.dsl.in-addr.zen.co.uk) at Sun Jul 17 21:23:20 2005
+ftpd | unknown | connection from REMOTE_HOST_071 (82-68-222-194.dsl.in-addr.zen.co.uk) at Sun Jul 17 21:23:20 2005
+ftpd | unknown | connection from REMOTE_HOST_071 (82-68-222-194.dsl.in-addr.zen.co.uk) at Sun Jul 17 21:23:23 2005
+ftpd | unknown | connection from REMOTE_HOST_071 (82-68-222-194.dsl.in-addr.zen.co.uk) at Sun Jul 17 21:23:24 2005
+ftpd | unknown | connection from REMOTE_HOST_071 (82-68-222-194.dsl.in-addr.zen.co.uk) at Sun Jul 17 21:23:24 2005
+ftpd | unknown | connection from REMOTE_HOST_071 (82-68-222-194.dsl.in-addr.zen.co.uk) at Sun Jul 17 21:23:24 2005
+ftpd | unknown | connection from REMOTE_HOST_071 (82-68-222-194.dsl.in-addr.zen.co.uk) at Sun Jul 17 21:23:24 2005
+ftpd | unknown | connection from REMOTE_HOST_071 (82-68-222-194.dsl.in-addr.zen.co.uk) at Sun Jul 17 21:23:24 2005
+ftpd | unknown | connection from REMOTE_HOST_071 (82-68-222-194.dsl.in-addr.zen.co.uk) at Sun Jul 17 21:23:24 2005
+ftpd | unknown | connection from REMOTE_HOST_072 (82-68-222-195.dsl.in-addr.zen.co.uk) at Sun Jul 17 23:21:50 2005
+ftpd | unknown | connection from REMOTE_HOST_072 (82-68-222-195.dsl.in-addr.zen.co.uk) at Sun Jul 17 23:21:54 2005
+ftpd | unknown | connection from REMOTE_HOST_072 (82-68-222-195.dsl.in-addr.zen.co.uk) at Sun Jul 17 23:21:54 2005
+ftpd | unknown | connection from REMOTE_HOST_072 (82-68-222-195.dsl.in-addr.zen.co.uk) at Sun Jul 17 23:21:54 2005
+ftpd | unknown | connection from REMOTE_HOST_072 (82-68-222-195.dsl.in-addr.zen.co.uk) at Sun Jul 17 23:21:54 2005
+ftpd | unknown | connection from REMOTE_HOST_072 (82-68-222-195.dsl.in-addr.zen.co.uk) at Sun Jul 17 23:21:54 2005
+ftpd | unknown | connection from REMOTE_HOST_072 (82-68-222-195.dsl.in-addr.zen.co.uk) at Sun Jul 17 23:21:54 2005
+ftpd | unknown | connection from REMOTE_HOST_072 (82-68-222-195.dsl.in-addr.zen.co.uk) at Sun Jul 17 23:21:54 2005
+ftpd | unknown | connection from REMOTE_HOST_072 (82-68-222-195.dsl.in-addr.zen.co.uk) at Sun Jul 17 23:21:54 2005
+ftpd | unknown | connection from REMOTE_HOST_072 (82-68-222-195.dsl.in-addr.zen.co.uk) at Sun Jul 17 23:21:54 2005
+ftpd | unknown | connection from REMOTE_HOST_072 (82-68-222-195.dsl.in-addr.zen.co.uk) at Sun Jul 17 23:21:54 2005
+ftpd | unknown | connection from REMOTE_HOST_072 (82-68-222-195.dsl.in-addr.zen.co.uk) at Sun Jul 17 23:21:54 2005
+ftpd | unknown | connection from REMOTE_HOST_072 (82-68-222-195.dsl.in-addr.zen.co.uk) at Sun Jul 17 23:21:54 2005
+ftpd | unknown | connection from REMOTE_HOST_072 (82-68-222-195.dsl.in-addr.zen.co.uk) at Sun Jul 17 23:21:54 2005
+ftpd | unknown | connection from REMOTE_HOST_072 (82-68-222-195.dsl.in-addr.zen.co.uk) at Sun Jul 17 23:21:54 2005
+ftpd | unknown | connection from REMOTE_HOST_072 (82-68-222-195.dsl.in-addr.zen.co.uk) at Sun Jul 17 23:21:54 2005
+ftpd | unknown | connection from REMOTE_HOST_072 (82-68-222-195.dsl.in-addr.zen.co.uk) at Sun Jul 17 23:21:54 2005
+ftpd | unknown | connection from REMOTE_HOST_072 (82-68-222-195.dsl.in-addr.zen.co.uk) at Sun Jul 17 23:21:54 2005
+ftpd | unknown | connection from REMOTE_HOST_072 (82-68-222-195.dsl.in-addr.zen.co.uk) at Sun Jul 17 23:21:54 2005
+ftpd | unknown | connection from REMOTE_HOST_072 (82-68-222-195.dsl.in-addr.zen.co.uk) at Sun Jul 17 23:21:54 2005
+ftpd | unknown | connection from REMOTE_HOST_072 (82-68-222-195.dsl.in-addr.zen.co.uk) at Sun Jul 17 23:21:54 2005
+ftpd | unknown | connection from REMOTE_HOST_072 (82-68-222-195.dsl.in-addr.zen.co.uk) at Sun Jul 17 23:21:54 2005
+ftpd | unknown | connection from REMOTE_HOST_072 (82-68-222-195.dsl.in-addr.zen.co.uk) at Sun Jul 17 23:21:54 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Mon Jul 18 03:26:48 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Mon Jul 18 03:26:48 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Mon Jul 18 03:26:48 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Mon Jul 18 03:26:48 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Mon Jul 18 03:26:48 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Mon Jul 18 03:26:48 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Mon Jul 18 03:26:48 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Mon Jul 18 03:26:48 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Mon Jul 18 03:26:49 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Mon Jul 18 03:26:49 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Mon Jul 18 03:26:49 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Mon Jul 18 03:26:49 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Mon Jul 18 03:26:49 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Mon Jul 18 03:26:49 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Mon Jul 18 03:26:49 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Mon Jul 18 03:26:49 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Mon Jul 18 03:26:49 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Mon Jul 18 03:26:49 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Mon Jul 18 03:26:49 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Mon Jul 18 03:26:49 2005
+ftpd | unknown | connection from REMOTE_HOST_047 () at Mon Jul 18 03:26:49 2005
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_073 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_073 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_073 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_073 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_073 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_073 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_073 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_073 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_073 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_073 | authentication failure
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_074 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_074 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_074 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_074 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_074 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_074 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_074 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_074 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_074 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_074 user=USER_001 | authentication failure
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_075 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_075 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_075 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_075 | authentication failure
+sshd | unknown | check pass; user unknown
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_075 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_041 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_041 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_041 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_041 user=USER_001 | authentication failure
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+ftpd | unknown | connection from REMOTE_HOST_076 () at Thu Jul 21 09:04:41 2005
+ftpd | unknown | connection from REMOTE_HOST_076 () at Thu Jul 21 09:04:41 2005
+ftpd | unknown | connection from REMOTE_HOST_076 () at Thu Jul 21 09:04:41 2005
+ftpd | unknown | connection from REMOTE_HOST_076 () at Thu Jul 21 09:04:41 2005
+ftpd | unknown | connection from REMOTE_HOST_076 () at Thu Jul 21 09:04:41 2005
+ftpd | unknown | connection from REMOTE_HOST_076 () at Thu Jul 21 09:04:41 2005
+ftpd | unknown | connection from REMOTE_HOST_076 () at Thu Jul 21 09:04:41 2005
+ftpd | unknown | connection from REMOTE_HOST_076 () at Thu Jul 21 09:04:41 2005
+ftpd | unknown | connection from REMOTE_HOST_076 () at Thu Jul 21 09:04:41 2005
+ftpd | unknown | connection from REMOTE_HOST_076 () at Thu Jul 21 09:04:41 2005
+ftpd | unknown | connection from REMOTE_HOST_076 () at Thu Jul 21 09:04:41 2005
+ftpd | unknown | connection from REMOTE_HOST_076 () at Thu Jul 21 09:04:41 2005
+ftpd | unknown | connection from REMOTE_HOST_076 () at Thu Jul 21 09:04:41 2005
+ftpd | unknown | connection from REMOTE_HOST_076 () at Thu Jul 21 09:04:41 2005
+ftpd | unknown | connection from REMOTE_HOST_076 () at Thu Jul 21 09:04:41 2005
+ftpd | unknown | connection from REMOTE_HOST_076 () at Thu Jul 21 09:04:41 2005
+ftpd | unknown | connection from REMOTE_HOST_076 () at Thu Jul 21 09:04:41 2005
+ftpd | unknown | connection from REMOTE_HOST_076 () at Thu Jul 21 09:04:41 2005
+ftpd | unknown | connection from REMOTE_HOST_076 () at Thu Jul 21 09:04:41 2005
+ftpd | unknown | connection from REMOTE_HOST_076 () at Thu Jul 21 09:04:41 2005
+ftpd | unknown | connection from REMOTE_HOST_076 () at Thu Jul 21 09:04:41 2005
+ftpd | unknown | connection from REMOTE_HOST_076 () at Thu Jul 21 09:04:41 2005
+ftpd | unknown | connection from REMOTE_HOST_076 () at Thu Jul 21 09:04:43 2005
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_077 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_077 user=USER_001 | authentication failure
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+ftpd | unknown | connection from REMOTE_HOST_078 () at Fri Jul 22 09:27:24 2005
+ftpd | unknown | connection from REMOTE_HOST_078 () at Fri Jul 22 09:27:24 2005
+ftpd | unknown | connection from REMOTE_HOST_078 () at Fri Jul 22 09:27:24 2005
+ftpd | unknown | connection from REMOTE_HOST_078 () at Fri Jul 22 09:27:24 2005
+ftpd | unknown | connection from REMOTE_HOST_078 () at Fri Jul 22 09:27:24 2005
+ftpd | unknown | connection from REMOTE_HOST_078 () at Fri Jul 22 09:27:24 2005
+ftpd | unknown | connection from REMOTE_HOST_078 () at Fri Jul 22 09:27:24 2005
+ftpd | unknown | connection from REMOTE_HOST_078 () at Fri Jul 22 09:27:24 2005
+ftpd | unknown | connection from REMOTE_HOST_078 () at Fri Jul 22 09:27:24 2005
+ftpd | unknown | connection from REMOTE_HOST_078 () at Fri Jul 22 09:27:24 2005
+ftpd | unknown | connection from REMOTE_HOST_078 () at Fri Jul 22 09:27:24 2005
+ftpd | unknown | connection from REMOTE_HOST_078 () at Fri Jul 22 09:27:24 2005
+ftpd | unknown | connection from REMOTE_HOST_078 () at Fri Jul 22 09:27:24 2005
+ftpd | unknown | connection from REMOTE_HOST_078 () at Fri Jul 22 09:27:24 2005
+ftpd | unknown | connection from REMOTE_HOST_078 () at Fri Jul 22 09:27:24 2005
+ftpd | unknown | connection from REMOTE_HOST_078 () at Fri Jul 22 09:27:24 2005
+ftpd | unknown | connection from REMOTE_HOST_078 () at Fri Jul 22 09:27:24 2005
+ftpd | unknown | connection from REMOTE_HOST_078 () at Fri Jul 22 09:27:24 2005
+ftpd | unknown | connection from REMOTE_HOST_078 () at Fri Jul 22 09:27:24 2005
+ftpd | unknown | connection from REMOTE_HOST_078 () at Fri Jul 22 09:27:24 2005
+ftpd | unknown | connection from REMOTE_HOST_078 () at Fri Jul 22 09:27:24 2005
+ftpd | unknown | connection from REMOTE_HOST_078 () at Fri Jul 22 09:27:24 2005
+ftpd | unknown | connection from REMOTE_HOST_078 () at Fri Jul 22 09:27:24 2005
+ftpd | unknown | connection from REMOTE_HOST_079 () at Fri Jul 22 19:29:09 2005
+ftpd | unknown | connection from REMOTE_HOST_079 () at Fri Jul 22 19:29:09 2005
+ftpd | unknown | connection from REMOTE_HOST_079 () at Fri Jul 22 19:29:09 2005
+ftpd | unknown | connection from REMOTE_HOST_079 () at Fri Jul 22 19:29:09 2005
+ftpd | unknown | connection from REMOTE_HOST_079 () at Fri Jul 22 19:29:09 2005
+ftpd | unknown | connection from REMOTE_HOST_079 () at Fri Jul 22 19:29:09 2005
+ftpd | unknown | connection from REMOTE_HOST_079 () at Fri Jul 22 19:29:09 2005
+ftpd | unknown | connection from REMOTE_HOST_079 () at Fri Jul 22 19:29:09 2005
+ftpd | unknown | connection from REMOTE_HOST_079 () at Fri Jul 22 19:29:09 2005
+ftpd | unknown | connection from REMOTE_HOST_079 () at Fri Jul 22 19:29:09 2005
+ftpd | unknown | connection from REMOTE_HOST_079 () at Fri Jul 22 19:29:09 2005
+ftpd | unknown | connection from REMOTE_HOST_079 () at Fri Jul 22 19:29:09 2005
+ftpd | unknown | connection from REMOTE_HOST_079 () at Fri Jul 22 19:29:09 2005
+ftpd | unknown | connection from REMOTE_HOST_079 () at Fri Jul 22 19:29:09 2005
+ftpd | unknown | connection from REMOTE_HOST_079 () at Fri Jul 22 19:29:09 2005
+ftpd | unknown | connection from REMOTE_HOST_079 () at Fri Jul 22 19:29:09 2005
+ftpd | unknown | connection from REMOTE_HOST_079 () at Fri Jul 22 19:29:09 2005
+ftpd | unknown | connection from REMOTE_HOST_079 () at Fri Jul 22 19:29:09 2005
+ftpd | unknown | connection from REMOTE_HOST_079 () at Fri Jul 22 19:29:09 2005
+ftpd | unknown | connection from REMOTE_HOST_079 () at Fri Jul 22 19:29:09 2005
+ftpd | unknown | connection from REMOTE_HOST_079 () at Fri Jul 22 19:29:09 2005
+ftpd | unknown | connection from REMOTE_HOST_079 () at Fri Jul 22 19:29:09 2005
+ftpd | unknown | connection from REMOTE_HOST_079 () at Fri Jul 22 19:29:10 2005
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_080 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_081 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_081 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_081 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_081 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_081 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_081 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_081 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_081 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_081 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_081 user=USER_001 | authentication failure
+ftpd | unknown | connection from REMOTE_HOST_082 () at Sun Jul 24 02:38:22 2005
+ftpd | unknown | connection from REMOTE_HOST_082 () at Sun Jul 24 02:38:22 2005
+ftpd | unknown | connection from REMOTE_HOST_082 () at Sun Jul 24 02:38:22 2005
+ftpd | unknown | connection from REMOTE_HOST_082 () at Sun Jul 24 02:38:22 2005
+ftpd | unknown | connection from REMOTE_HOST_082 () at Sun Jul 24 02:38:22 2005
+ftpd | unknown | connection from REMOTE_HOST_082 () at Sun Jul 24 02:38:22 2005
+ftpd | unknown | connection from REMOTE_HOST_082 () at Sun Jul 24 02:38:22 2005
+ftpd | unknown | connection from REMOTE_HOST_082 () at Sun Jul 24 02:38:22 2005
+ftpd | unknown | connection from REMOTE_HOST_082 () at Sun Jul 24 02:38:22 2005
+ftpd | unknown | connection from REMOTE_HOST_082 () at Sun Jul 24 02:38:22 2005
+ftpd | unknown | connection from REMOTE_HOST_082 () at Sun Jul 24 02:38:22 2005
+ftpd | unknown | connection from REMOTE_HOST_082 () at Sun Jul 24 02:38:22 2005
+ftpd | unknown | connection from REMOTE_HOST_082 () at Sun Jul 24 02:38:22 2005
+ftpd | unknown | connection from REMOTE_HOST_082 () at Sun Jul 24 02:38:22 2005
+ftpd | unknown | connection from REMOTE_HOST_082 () at Sun Jul 24 02:38:22 2005
+ftpd | unknown | connection from REMOTE_HOST_082 () at Sun Jul 24 02:38:22 2005
+ftpd | unknown | connection from REMOTE_HOST_082 () at Sun Jul 24 02:38:22 2005
+ftpd | unknown | connection from REMOTE_HOST_082 () at Sun Jul 24 02:38:22 2005
+ftpd | unknown | connection from REMOTE_HOST_082 () at Sun Jul 24 02:38:22 2005
+ftpd | unknown | connection from REMOTE_HOST_082 () at Sun Jul 24 02:38:22 2005
+ftpd | unknown | connection from REMOTE_HOST_082 () at Sun Jul 24 02:38:22 2005
+ftpd | unknown | connection from REMOTE_HOST_082 () at Sun Jul 24 02:38:22 2005
+ftpd | unknown | connection from REMOTE_HOST_082 () at Sun Jul 24 02:38:22 2005
+ftpd | unknown | ANONYMOUS FTP LOGIN FROM REMOTE_HOST_082,  (anonymous)
+ftpd | unknown | ANONYMOUS FTP LOGIN FROM REMOTE_HOST_082,  (anonymous)
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+cups | unknown | cupsd shutdown succeeded
+cups | unknown | cupsd startup succeeded
+unknown | unknown | timestamp_format=bsd_syslog | Jul 24 04:20:42 HOST_001 syslogd 1.4.1: restart.
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_083 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_083 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_083 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_083 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_083 user=USER_001 | authentication failure
+ftpd | unknown | connection from REMOTE_HOST_065 () at Sun Jul 24 13:46:32 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Sun Jul 24 13:46:32 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Sun Jul 24 13:46:32 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Sun Jul 24 13:46:32 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Sun Jul 24 13:46:32 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Sun Jul 24 13:46:32 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Sun Jul 24 13:46:32 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Sun Jul 24 13:46:32 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Sun Jul 24 13:46:32 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Sun Jul 24 13:46:34 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Sun Jul 24 13:46:34 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Sun Jul 24 13:46:34 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Sun Jul 24 13:46:34 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Sun Jul 24 13:46:34 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Sun Jul 24 13:46:34 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Sun Jul 24 13:46:34 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Sun Jul 24 13:46:34 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Sun Jul 24 13:46:34 2005
+ftpd | unknown | connection from REMOTE_HOST_065 () at Sun Jul 24 13:46:35 2005
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+ftpd | unknown | connection from REMOTE_HOST_084 () at Mon Jul 25 06:39:18 2005
+ftpd | unknown | connection from REMOTE_HOST_084 () at Mon Jul 25 06:39:18 2005
+ftpd | unknown | connection from REMOTE_HOST_084 () at Mon Jul 25 06:39:18 2005
+ftpd | unknown | connection from REMOTE_HOST_084 () at Mon Jul 25 06:39:18 2005
+ftpd | unknown | connection from REMOTE_HOST_084 () at Mon Jul 25 06:39:18 2005
+ftpd | unknown | connection from REMOTE_HOST_084 () at Mon Jul 25 06:39:18 2005
+ftpd | unknown | connection from REMOTE_HOST_084 () at Mon Jul 25 06:39:18 2005
+ftpd | unknown | connection from REMOTE_HOST_084 () at Mon Jul 25 06:39:18 2005
+ftpd | unknown | connection from REMOTE_HOST_084 () at Mon Jul 25 06:39:18 2005
+ftpd | unknown | connection from REMOTE_HOST_084 () at Mon Jul 25 06:39:18 2005
+ftpd | unknown | connection from REMOTE_HOST_084 () at Mon Jul 25 06:39:18 2005
+ftpd | unknown | connection from REMOTE_HOST_084 () at Mon Jul 25 06:39:18 2005
+ftpd | unknown | connection from REMOTE_HOST_084 () at Mon Jul 25 06:39:18 2005
+ftpd | unknown | connection from REMOTE_HOST_084 () at Mon Jul 25 06:39:18 2005
+ftpd | unknown | connection from REMOTE_HOST_084 () at Mon Jul 25 06:39:18 2005
+ftpd | unknown | connection from REMOTE_HOST_084 () at Mon Jul 25 06:39:18 2005
+ftpd | unknown | connection from REMOTE_HOST_084 () at Mon Jul 25 06:39:18 2005
+ftpd | unknown | connection from REMOTE_HOST_084 () at Mon Jul 25 06:39:18 2005
+ftpd | unknown | connection from REMOTE_HOST_084 () at Mon Jul 25 06:39:18 2005
+ftpd | unknown | connection from REMOTE_HOST_084 () at Mon Jul 25 06:39:18 2005
+ftpd | unknown | connection from REMOTE_HOST_084 () at Mon Jul 25 06:39:18 2005
+ftpd | unknown | connection from REMOTE_HOST_084 () at Mon Jul 25 06:39:18 2005
+ftpd | unknown | connection from REMOTE_HOST_084 () at Mon Jul 25 06:39:18 2005
+named | unknown | notify question section contains no SOA
+named | unknown | notify question section contains no SOA
+named | unknown | notify question section contains no SOA
+named | unknown | notify question section contains no SOA
+named | unknown | notify question section contains no SOA
+named | unknown | notify question section contains no SOA
+named | unknown | notify question section contains no SOA
+named | unknown | notify question section contains no SOA
+named | unknown | notify question section contains no SOA
+named | unknown | notify question section contains no SOA
+named | unknown | notify question section contains no SOA
+named | unknown | notify question section contains no SOA
+named | unknown | notify question section contains no SOA
+named | unknown | notify question section contains no SOA
+named | unknown | notify question section contains no SOA
+named | unknown | notify question section contains no SOA
+ftpd | unknown | getpeername (ftpd): Transport endpoint is not connected
+ftpd | unknown | getpeername (ftpd): Transport endpoint is not connected
+xinetd | unknown | warning: can't get client address: Connection reset by peer
+ftpd | unknown | getpeername (ftpd): Transport endpoint is not connected
+xinetd | unknown | warning: can't get client address: Connection reset by peer
+ftpd | unknown | getpeername (ftpd): Transport endpoint is not connected
+ftpd | unknown | connection from REMOTE_HOST_085 () at Mon Jul 25 23:24:09 2005
+ftpd | unknown | connection from REMOTE_HOST_085 () at Mon Jul 25 23:24:09 2005
+ftpd | unknown | connection from REMOTE_HOST_085 () at Mon Jul 25 23:24:09 2005
+ftpd | unknown | connection from REMOTE_HOST_085 () at Mon Jul 25 23:24:09 2005
+ftpd | unknown | connection from REMOTE_HOST_085 () at Mon Jul 25 23:24:09 2005
+ftpd | unknown | connection from REMOTE_HOST_085 () at Mon Jul 25 23:24:09 2005
+ftpd | unknown | connection from REMOTE_HOST_085 () at Mon Jul 25 23:24:09 2005
+ftpd | unknown | connection from REMOTE_HOST_085 () at Mon Jul 25 23:24:09 2005
+ftpd | unknown | connection from REMOTE_HOST_085 () at Mon Jul 25 23:24:09 2005
+ftpd | unknown | connection from REMOTE_HOST_085 () at Mon Jul 25 23:24:09 2005
+ftpd | unknown | connection from REMOTE_HOST_085 () at Mon Jul 25 23:24:09 2005
+ftpd | unknown | connection from REMOTE_HOST_085 () at Mon Jul 25 23:24:09 2005
+ftpd | unknown | connection from REMOTE_HOST_085 () at Mon Jul 25 23:24:09 2005
+ftpd | unknown | connection from REMOTE_HOST_085 () at Mon Jul 25 23:24:09 2005
+ftpd | unknown | connection from REMOTE_HOST_085 () at Mon Jul 25 23:24:09 2005
+ftpd | unknown | connection from REMOTE_HOST_085 () at Mon Jul 25 23:24:09 2005
+ftpd | unknown | connection from REMOTE_HOST_085 () at Mon Jul 25 23:24:09 2005
+ftpd | unknown | connection from REMOTE_HOST_085 () at Mon Jul 25 23:24:09 2005
+ftpd | unknown | connection from REMOTE_HOST_085 () at Mon Jul 25 23:24:09 2005
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+ftpd | unknown | connection from REMOTE_HOST_086 () at Tue Jul 26 05:47:42 2005
+ftpd | unknown | connection from REMOTE_HOST_086 () at Tue Jul 26 05:47:42 2005
+ftpd | unknown | connection from REMOTE_HOST_086 () at Tue Jul 26 05:47:42 2005
+ftpd | unknown | connection from REMOTE_HOST_086 () at Tue Jul 26 05:47:42 2005
+ftpd | unknown | connection from REMOTE_HOST_086 () at Tue Jul 26 05:47:42 2005
+ftpd | unknown | connection from REMOTE_HOST_086 () at Tue Jul 26 05:47:42 2005
+ftpd | unknown | connection from REMOTE_HOST_086 () at Tue Jul 26 05:47:42 2005
+ftpd | unknown | connection from REMOTE_HOST_086 () at Tue Jul 26 05:47:42 2005
+ftpd | unknown | connection from REMOTE_HOST_086 () at Tue Jul 26 05:47:42 2005
+ftpd | unknown | connection from REMOTE_HOST_086 () at Tue Jul 26 05:47:42 2005
+ftpd | unknown | connection from REMOTE_HOST_086 () at Tue Jul 26 05:47:42 2005
+ftpd | unknown | connection from REMOTE_HOST_086 () at Tue Jul 26 05:47:42 2005
+ftpd | unknown | connection from REMOTE_HOST_086 () at Tue Jul 26 05:47:42 2005
+ftpd | unknown | connection from REMOTE_HOST_086 () at Tue Jul 26 05:47:42 2005
+ftpd | unknown | connection from REMOTE_HOST_086 () at Tue Jul 26 05:47:42 2005
+ftpd | unknown | connection from REMOTE_HOST_086 () at Tue Jul 26 05:47:42 2005
+ftpd | unknown | connection from REMOTE_HOST_086 () at Tue Jul 26 05:47:42 2005
+ftpd | unknown | connection from REMOTE_HOST_086 () at Tue Jul 26 05:47:42 2005
+ftpd | unknown | connection from REMOTE_HOST_086 () at Tue Jul 26 05:47:51 2005
+ftpd | unknown | connection from REMOTE_HOST_086 () at Tue Jul 26 05:47:51 2005
+ftpd | unknown | connection from REMOTE_HOST_086 () at Tue Jul 26 05:47:51 2005
+ftpd | unknown | connection from REMOTE_HOST_086 () at Tue Jul 26 05:47:51 2005
+ftpd | unknown | connection from REMOTE_HOST_086 () at Tue Jul 26 05:47:51 2005
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_087 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_087 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_087 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_087 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_087 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_087 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_087 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_087 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_087 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_087 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_087 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_087 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_087 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_087 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_087 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_087 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_087 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_087 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_087 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_087 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_087 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_087 user=USER_001 | authentication failure
+sshd | authentication_failure | uid=0 euid=0 tty=NODEVssh rhost=REMOTE_HOST_087 user=USER_001 | authentication failure
+su | session_opened | user=USER_002 | session opened for user USER_002 by (uid=0)
+su | session_closed | user=USER_002 | session closed for user USER_002
+logrotate | abnormal_exit | ALERT exited abnormally with [1]
+su | session_opened | user=USER_003 | session opened for user USER_003 by (uid=0)
+su | session_closed | user=USER_003 | session closed for user USER_003
+ftpd | unknown | connection from REMOTE_HOST_088 () at Wed Jul 27 10:59:53 2005
+unknown | unknown | timestamp_format=bsd_syslog | Jul 27 14:41:57 HOST_001 syslogd 1.4.1: restart.
+syslog | unknown | syslogd startup succeeded
+kernel | service_started | klogd 1.4.1, log source = /proc/kmsg started.
+kernel | unknown | Linux version 2.6.5-1.358 (bhcompile@bugs.build.redhat.com) (gcc version 3.3.3 20040412 (Red Hat Linux 3.3.3-7)) #1 Sat May 8 09:04:50 EDT 2004
+kernel | unknown | BIOS-provided physical RAM map:
+kernel | unknown | BIOS-e820: 0000000000000000 - 00000000000a0000 (usable)
+kernel | unknown | BIOS-e820: 00000000000f0000 - 0000000000100000 (reserved)
+kernel | unknown | BIOS-e820: 0000000000100000 - 0000000007eae000 (usable)
+kernel | unknown | BIOS-e820: 0000000007eae000 - 0000000008000000 (reserved)
+kernel | unknown | BIOS-e820: 00000000ffb00000 - 0000000100000000 (reserved)
+kernel | unknown | 0MB HIGHMEM available.
+kernel | unknown | 126MB LOWMEM available.
+kernel | unknown | zapping low mappings.
+syslog | unknown | klogd startup succeeded
+kernel | unknown | On node 0 totalpages: 32430
+kernel | unknown | DMA zone: 4096 pages, LIFO batch:1
+kernel | unknown | Normal zone: 28334 pages, LIFO batch:6
+irqbalance | unknown | irqbalance startup succeeded
+kernel | unknown | HighMem zone: 0 pages, LIFO batch:1
+kernel | unknown | DMI 2.3 present.
+kernel | unknown | ACPI disabled because your bios is from 2000 and too old
+kernel | unknown | acpi=force | You can enable it with
+kernel | unknown | Built 1 zonelists
+kernel | unknown | root=LABEL=/ | Kernel command line: ro rhgb quiet
+kernel | unknown | mapped 4G/4G trampoline to ffff3000.
+kernel | unknown | Initializing CPU#0
+kernel | unknown | hard=2345000 soft=2344000 | CPU 0 irqstacks
+portmap | unknown | portmap startup succeeded
+kernel | unknown | PID hash table entries: 512 (order 9: 4096 bytes)
+kernel | unknown | Detected 731.219 MHz processor.
+rpc.statd | service_started | Version 1.0.6 Starting
+kernel | unknown | Using tsc for high-res timesource
+nfslock | unknown | rpc.statd startup succeeded
+kernel | unknown | Console: colour VGA+ 80x25
+kernel | unknown | Memory: 125312k/129720k available (1540k kernel code, 3860k reserved, 599k data, 144k init, 0k highmem)
+kernel | unknown | Calibrating delay loop... 1445.88 BogoMIPS
+kernel | unknown | Security Scaffold v1.0.0 initialized
+kernel | unknown | SELinux:  Initializing.
+kernel | service_started | SELinux:  Starting in permissive mode
+kernel | service_failed | There is already a security framework initialized, register_security failed.
+kernel | unknown | Failure registering capabilities with the kernel
+kernel | unknown | selinux_register_security:  Registering secondary module capability
+kernel | unknown | Capability LSM initialized
+rpcidmapd | unknown | rpc.idmapd startup succeeded
+kernel | unknown | Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+kernel | unknown | Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+kernel | unknown | Mount-cache hash table entries: 512 (order: 0, 4096 bytes)
+kernel | unknown | CPU: L1 I cache: 16K, L1 D cache: 16K
+kernel | unknown | CPU: L2 cache: 256K
+kernel | unknown | Intel machine check architecture supported.
+kernel | unknown | Intel machine check reporting enabled on CPU#0.
+kernel | unknown | CPU: Intel Pentium III (Coppermine) stepping 06
+kernel | unknown | Enabling fast FPU save and restore... done.
+kernel | unknown | Enabling unmasked SIMD FPU exception support... done.
+kernel | unknown | Checking 'hlt' instruction... OK.
+random | unknown | Initializing random number generator:  succeeded
+kernel | unknown | POSIX conformance testing by UNIFIX
+kernel | unknown | NET: Registered protocol family 16
+kernel | unknown | bus=1 | PCI: PCI BIOS revision 2.10 entry at 0xfc0ce, last
+kernel | unknown | PCI: Using configuration type 1
+kernel | unknown | mtrr: v2.0 (20020519)
+kernel | unknown | ACPI: Subsystem revision 20040326
+kernel | unknown | ACPI: Interpreter disabled.
+kernel | unknown | Linux Plug and Play Support v0.97 (c) Adam Belay
+rc | service_started | Starting pcmcia:  succeeded
+kernel | unknown | usbcore: registered new driver usbfs
+kernel | unknown | usbcore: registered new driver hub
+kernel | unknown | ACPI: ACPI tables contain no PCI IRQ routing entries
+kernel | unknown | PCI: Invalid ACPI-PCI IRQ routing table
+kernel | unknown | PCI: Probing PCI hardware
+kernel | unknown | PCI: Probing PCI hardware (bus 00)
+kernel | unknown | Transparent bridge - 0000:00:1e.0
+kernel | unknown | PCI: Using IRQ router PIIX/ICH [8086/2410] at 0000:00:1f.0
+kernel | unknown | apm: BIOS version 1.2 Flags 0x03 (Driver version 1.16ac)
+kernel | unknown | audit: initializing netlink socket (disabled)
+sysctl | unknown | kernel.core_uses_pid = 1
+hcid | service_started | HCI daemon ver 2.4 started
+bluetooth | unknown | hcid startup succeeded
+kernel | unknown | audit(1122475266.4294965305:0): initialized
+network | unknown | Setting network parameters:  succeeded
+bluetooth | unknown | sdpd startup succeeded
+sdpd | service_started | sdpd v1.5 started
+kernel | unknown | Total HugeTLB memory allocated, 0
+network | unknown | Bringing up loopback interface:  succeeded
+kernel | unknown | VFS: Disk quotas dquot_6.5.1
+kernel | unknown | Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+kernel | unknown | SELinux:  Registering netfilter hooks
+kernel | unknown | Initializing Cryptographic API
+kernel | unknown | pci_hotplug: PCI Hot Plug PCI Core version: 0.5
+kernel | unknown | isapnp: Scanning for PnP cards...
+kernel | unknown | isapnp: No Plug & Play device found
+kernel | unknown | Real Time Clock Driver v1.12
+kernel | unknown | Linux agpgart interface v0.100 (c) Dave Jones
