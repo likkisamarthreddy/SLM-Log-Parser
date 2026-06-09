@@ -1,158 +1,177 @@
-import os
-import sys
+import argparse
 import json
 import csv
-import argparse
+import sys
 from collections import Counter
 from typing import List, Dict, Any
 
-def parse_args():
-    parser = argparse.ArgumentParser(description="Query Interface for Structured Log JSON")
-    parser.add_argument("input", help="Path to parsed JSON or NDJSON file")
-    
-    # Filtering Arguments
-    parser.add_argument("--process", help="Filter by process name (e.g., sshd, su)")
-    parser.add_argument("--event", help="Filter by event type (e.g., authentication_failure)")
-    parser.add_argument("--hostname", help="Filter by hostname")
-    parser.add_argument("--pid", help="Filter by PID")
-    parser.add_argument("--keyword", help="Substring match in the message field")
-    parser.add_argument("--user", help="Filter by user (looks in metadata)")
-    parser.add_argument("--rhost", help="Filter by rhost (looks in metadata)")
-    parser.add_argument("--meta", action="append", help="Filter by arbitrary metadata (format: key=value)")
+def load_ndjson(filepath: str) -> List[Dict[str, Any]]:
+    logs = []
+    try:
+        if filepath.endswith('.gz'):
+            import gzip
+            with gzip.open(filepath, 'rt', encoding='utf-8') as f:
+                for line in f:
+                    logs.append(json.loads(line))
+        else:
+            with open(filepath, 'r', encoding='utf-8') as f:
+                for line in f:
+                    logs.append(json.loads(line))
+        # Skip the metadata line if it exists
+        if logs and '_metadata' in logs[0]:
+            return logs[1:]
+        return logs
+    except Exception as e:
+        print(f"Error loading {filepath}: {e}")
+        sys.exit(1)
 
-    # Aggregation
-    parser.add_argument("--group-by", help="Aggregate and count by a specific field (process, event, user, hostname)")
-    
-    # Output
-    parser.add_argument("--output", help="Save results to a file (.json or .csv)")
-    parser.add_argument("--limit", type=int, help="Limit the number of results printed to console")
-
-    return parser.parse_args()
-
-def stream_logs(filepath: str):
-    """Generator that yields one log dictionary at a time, handling both JSON array and NDJSON formats."""
-    with open(filepath, "r", encoding="utf-8") as f:
-        # First, try to read as a single JSON file
-        try:
+def load_json(filepath: str) -> List[Dict[str, Any]]:
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
             data = json.load(f)
-            logs = data.get("logs", [])
-            for log in logs:
-                yield log
-            return  # Successfully read as standard JSON
-        except json.JSONDecodeError:
-            # If it fails, it's likely NDJSON, so we process line-by-line
-            f.seek(0)
-            for line in f:
-                line = line.strip()
-                if not line: continue
-                try:
-                    yield json.loads(line)
-                except:
-                    pass
+            return data.get('logs', [])
+    except Exception as e:
+        print(f"Error loading {filepath}: {e}")
+        sys.exit(1)
 
-def match_log(log: Dict[str, Any], args: argparse.Namespace, meta_filters: Dict[str, str]) -> bool:
-    """Returns True if the log matches all given filters."""
-    if args.process and log.get("process") != args.process: return False
-    if args.event and log.get("event") != args.event: return False
-    if args.hostname and log.get("hostname") != args.hostname: return False
-    if args.pid and log.get("pid") != args.pid: return False
-    
-    if args.keyword and args.keyword.lower() not in log.get("message", "").lower():
-        return False
+def filter_logs(logs: List[Dict[str, Any]], args) -> List[Dict[str, Any]]:
+    filtered = []
+    for log in logs:
+        # Basic filtering
+        if args.process and log.get('process') != args.process: continue
+        if args.event and log.get('event') != args.event: continue
+        if args.hostname and log.get('hostname') != args.hostname: continue
+        if args.pid and str(log.get('pid')) != str(args.pid): continue
+        if args.keyword and args.keyword.lower() not in log.get('message', '').lower(): continue
         
-    meta = log.get("metadata", {})
-    if args.user and meta.get("user") != args.user: return False
-    if args.rhost and meta.get("rhost") != args.rhost: return False
-    
-    for k, v in meta_filters.items():
-        if str(meta.get(k, "")) != v:
-            return False
-            
-    return True
+        # Metadata filtering
+        meta = log.get('metadata', {})
+        if args.user and meta.get('user') != args.user: continue
+        if args.rhost and meta.get('rhost') != args.rhost: continue
+        if args.uid is not None and str(meta.get('uid')) != str(args.uid): continue
+        if args.tty and meta.get('tty') != args.tty: continue
+        if args.exit_code is not None and str(meta.get('exit_code')) != str(args.exit_code): continue
+        
+        filtered.append(log)
+    return filtered
 
-def export_csv(results: List[Dict[str, Any]], filepath: str):
-    if not results:
-        print("No results to export.")
+def print_aggregations(logs: List[Dict[str, Any]], args):
+    if not logs:
+        print("No logs to aggregate.")
         return
-        
-    # Flatten metadata into main dictionary
-    flat_results = []
-    all_keys = set()
-    
-    for r in results:
-        flat = {k: v for k, v in r.items() if k != "metadata"}
-        meta = r.get("metadata", {})
-        for k, v in meta.items():
-            flat[f"meta_{k}"] = v
-        for k in flat.keys():
-            all_keys.add(k)
-        flat_results.append(flat)
-        
-    with open(filepath, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=list(all_keys))
-        writer.writeheader()
-        writer.writerows(flat_results)
+
+    if args.count_by_process:
+        print("\n--- Count by Process ---")
+        counts = Counter(log.get('process') for log in logs if log.get('process'))
+        for k, v in counts.most_common(10): print(f"{k}: {v}")
+
+    if args.count_by_event:
+        print("\n--- Count by Event ---")
+        counts = Counter(log.get('event') for log in logs if log.get('event'))
+        for k, v in counts.most_common(10): print(f"{k}: {v}")
+
+    if args.count_by_user:
+        print("\n--- Count by User ---")
+        counts = Counter(log.get('metadata', {}).get('user') for log in logs if log.get('metadata', {}).get('user'))
+        for k, v in counts.most_common(10): print(f"{k}: {v}")
+
+    if args.count_by_hostname:
+        print("\n--- Count by Hostname ---")
+        counts = Counter(log.get('hostname') for log in logs if log.get('hostname'))
+        for k, v in counts.most_common(10): print(f"{k}: {v}")
+
+    if args.count_by_hour:
+        print("\n--- Count by Hour ---")
+        # Basic hour extraction assuming timestamp starts with Date/Time
+        hours = []
+        for log in logs:
+            ts = log.get('timestamp')
+            if ts:
+                # Naive split for standard syslog "Jun 15 04:06:18" or ISO "2026-04-05T15:35:01"
+                try:
+                    if 'T' in ts:
+                        hour = ts.split('T')[1].split(':')[0]
+                    else:
+                        hour = ts.split()[2].split(':')[0]
+                    hours.append(hour)
+                except Exception:
+                    pass
+        counts = Counter(hours)
+        for k, v in sorted(counts.items()): print(f"{k}:00 -> {v}")
+
+def export_results(logs: List[Dict[str, Any]], output_file: str, format: str):
+    if format == 'json':
+        with open(output_file, 'w', encoding='utf-8') as f:
+            json.dump({"logs": logs}, f, indent=2)
+        print(f"\nExported {len(logs)} records to {output_file}")
+    elif format == 'csv':
+        if not logs:
+            print("No logs to export.")
+            return
+        # Flatten basic fields
+        headers = ['line_number', 'timestamp', 'hostname', 'process', 'pid', 'event', 'message']
+        with open(output_file, 'w', newline='', encoding='utf-8') as f:
+            writer = csv.DictWriter(f, fieldnames=headers, extrasaction='ignore')
+            writer.writeheader()
+            for log in logs:
+                row = {k: log.get(k) for k in headers}
+                writer.writerow(row)
+        print(f"\nExported {len(logs)} records to {output_file}")
 
 def main():
-    args = parse_args()
+    parser = argparse.ArgumentParser(description="Query and Aggregate Structured JSON Logs")
     
-    if not os.path.exists(args.input):
-        print(f"File not found: {args.input}")
-        return
+    # Input/Output
+    parser.add_argument('--input', required=True, help='Path to parsed JSON or NDJSON file')
+    parser.add_argument('--export', help='Path to export results')
+    parser.add_argument('--format', choices=['json', 'csv'], default='json', help='Export format (default: json)')
+    
+    # Basic Filters
+    parser.add_argument('--process', help='Filter by process name (e.g. sshd)')
+    parser.add_argument('--event', help='Filter by event type (e.g. authentication_failure)')
+    parser.add_argument('--hostname', help='Filter by hostname')
+    parser.add_argument('--pid', help='Filter by PID')
+    parser.add_argument('--keyword', help='Filter by substring in message')
+    
+    # Metadata Filters
+    parser.add_argument('--user', help='Filter by metadata user')
+    parser.add_argument('--uid', help='Filter by metadata uid')
+    parser.add_argument('--rhost', help='Filter by metadata rhost')
+    parser.add_argument('--tty', help='Filter by metadata tty')
+    parser.add_argument('--exit_code', help='Filter by metadata exit_code')
+    
+    # Aggregations
+    parser.add_argument('--count-by-process', action='store_true', help='Show top processes')
+    parser.add_argument('--count-by-event', action='store_true', help='Show top events')
+    parser.add_argument('--count-by-user', action='store_true', help='Show top users')
+    parser.add_argument('--count-by-hostname', action='store_true', help='Show top hostnames')
+    parser.add_argument('--count-by-hour', action='store_true', help='Show activity by hour')
 
-    # Parse metadata filters
-    meta_filters = {}
-    if args.meta:
-        for m in args.meta:
-            if "=" in m:
-                k, v = m.split("=", 1)
-                meta_filters[k] = v
+    args = parser.parse_args()
 
-    results = []
-    counter = Counter()
-
-    print(f"Reading logs from {args.input}...")
-    for log in stream_logs(args.input):
-        if match_log(log, args, meta_filters):
-            results.append(log)
-            if args.group_by:
-                # Grouping extraction logic
-                if args.group_by in ["user", "rhost", "uid", "euid", "tty", "exit_code"]:
-                    val = log.get("metadata", {}).get(args.group_by, "UNKNOWN")
-                else:
-                    val = log.get(args.group_by, "UNKNOWN")
-                counter[val] += 1
-
-    print(f"\nMatched {len(results)} logs.")
-
-    if args.group_by:
-        print(f"\n--- Aggregation by '{args.group_by}' ---")
-        print(f"{args.group_by.upper().ljust(30)} COUNT")
-        print("-" * 45)
-        for val, count in counter.most_common():
-            print(f"{str(val).ljust(30)} {count}")
+    print(f"Loading {args.input}...")
+    if args.input.endswith('.ndjson') or args.input.endswith('.ndjson.gz'):
+        logs = load_ndjson(args.input)
     else:
-        # Print sample results
-        limit = args.limit if args.limit else 5
-        if results:
-            print("\n--- Sample Matches ---")
-            for r in results[:limit]:
-                ts = r.get("timestamp", "")
-                proc = r.get("process", "unknown")
-                evt = r.get("event", "unknown")
-                msg = r.get("message", "")
-                print(f"[{ts}] {proc} ({evt}): {msg}")
+        logs = load_json(args.input)
+        
+    print(f"Loaded {len(logs)} records.")
 
-    # Output export
-    if args.output:
-        os.makedirs(os.path.dirname(os.path.abspath(args.output)), exist_ok=True)
-        if args.output.endswith(".csv"):
-            export_csv(results, args.output)
-            print(f"\nExported {len(results)} rows to {args.output}")
-        else:
-            with open(args.output, "w", encoding="utf-8") as f:
-                json.dump(results, f, indent=2)
-            print(f"\nExported {len(results)} rows to {args.output}")
+    filtered_logs = filter_logs(logs, args)
+    print(f"Matched {len(filtered_logs)} records after filtering.")
+
+    # Show a sample if filters were applied and no aggregations requested
+    if len(filtered_logs) > 0 and len(filtered_logs) != len(logs):
+        if not any([args.count_by_process, args.count_by_event, args.count_by_user, args.count_by_hostname, args.count_by_hour]):
+            print("\nSample Match:")
+            print(json.dumps(filtered_logs[0], indent=2))
+
+    # Run Aggregations
+    print_aggregations(filtered_logs, args)
+
+    # Export
+    if args.export:
+        export_results(filtered_logs, args.export, args.format)
 
 if __name__ == "__main__":
     main()
