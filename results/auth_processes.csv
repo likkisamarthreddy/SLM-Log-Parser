@@ -1,0 +1,16 @@
+Key,Count
+login,594209
+unix_chkpwd,40270
+systemd-logind,13233
+(systemd),1170
+(sd-pam),917
+CRON,667
+polkitd,109
+sshd-session,62
+sudo,59
+lightdm,53
+gcr-prompter,39
+PackageKit,34
+sshd,24
+gnome-keyring-daemon,2
+dbus-daemon,1

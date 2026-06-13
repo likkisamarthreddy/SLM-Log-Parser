@@ -1,177 +1,214 @@
-import argparse
+import os
 import json
+import argparse
 import csv
-import sys
 from collections import Counter
-from typing import List, Dict, Any
+from typing import Iterator, Dict, Any
 
-def load_ndjson(filepath: str) -> List[Dict[str, Any]]:
-    logs = []
-    try:
-        if filepath.endswith('.gz'):
-            import gzip
-            with gzip.open(filepath, 'rt', encoding='utf-8') as f:
-                for line in f:
-                    logs.append(json.loads(line))
+def parse_args():
+    parser = argparse.ArgumentParser(description="Query and Aggregate Structured Log JSON/NDJSON files using memory-efficient streaming.")
+    
+    # Input
+    parser.add_argument("-i", "--input", required=True, help="Path to parsed/anonymized JSON or NDJSON log file")
+    
+    # Filters
+    parser.add_argument("--process", help="Filter by process name (e.g., sshd, su)")
+    parser.add_argument("--event", help="Filter by event type (e.g., authentication_failure)")
+    parser.add_argument("--hostname", help="Filter by hostname")
+    parser.add_argument("--pid", help="Filter by PID")
+    parser.add_argument("--user", help="Shortcut to filter by metadata 'user'")
+    parser.add_argument("--rhost", help="Shortcut to filter by metadata 'rhost'")
+    parser.add_argument("--message-contains", help="Filter logs where message contains this substring")
+    parser.add_argument("--meta", nargs="+", help="Filter by metadata key=value pairs (e.g., --meta uid=0 exit_code=1)")
+    
+    # Execution Modifiers
+    parser.add_argument("--limit", type=int, default=100, help="Max number of results to display/export (default: 100, 0 for unlimited)")
+    
+    # Aggregation
+    parser.add_argument("--aggregate", choices=["process", "event", "user", "hostname", "hour"], help="Perform a count aggregation instead of listing logs")
+    
+    # Export
+    parser.add_argument("--export-json", help="Path to save output as JSON array")
+    parser.add_argument("--export-csv", help="Path to save output as CSV")
+    
+    return parser.parse_args()
+
+def parse_metadata_filters(meta_args: list) -> Dict[str, str]:
+    meta_filters = {}
+    if meta_args:
+        for arg in meta_args:
+            if "=" in arg:
+                k, v = arg.split("=", 1)
+                meta_filters[k] = v
+    return meta_filters
+
+def stream_records(filepath: str) -> Iterator[Dict[str, Any]]:
+    """Yields log records one by one from NDJSON or JSON array."""
+    with open(filepath, 'r', encoding='utf-8') as f:
+        # Try to read the first character to determine format
+        first_char = f.read(1)
+        f.seek(0)
+        
+        if first_char == '[':
+            # It's a standard JSON array (load entirely to memory, unfortunately necessary for array without ijson)
+            try:
+                data = json.load(f)
+                for record in data:
+                    yield record
+            except Exception as e:
+                print(f"Error loading JSON array: {e}")
         else:
-            with open(filepath, 'r', encoding='utf-8') as f:
-                for line in f:
-                    logs.append(json.loads(line))
-        # Skip the metadata line if it exists
-        if logs and '_metadata' in logs[0]:
-            return logs[1:]
-        return logs
-    except Exception as e:
-        print(f"Error loading {filepath}: {e}")
-        sys.exit(1)
-
-def load_json(filepath: str) -> List[Dict[str, Any]]:
-    try:
-        with open(filepath, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-            return data.get('logs', [])
-    except Exception as e:
-        print(f"Error loading {filepath}: {e}")
-        sys.exit(1)
-
-def filter_logs(logs: List[Dict[str, Any]], args) -> List[Dict[str, Any]]:
-    filtered = []
-    for log in logs:
-        # Basic filtering
-        if args.process and log.get('process') != args.process: continue
-        if args.event and log.get('event') != args.event: continue
-        if args.hostname and log.get('hostname') != args.hostname: continue
-        if args.pid and str(log.get('pid')) != str(args.pid): continue
-        if args.keyword and args.keyword.lower() not in log.get('message', '').lower(): continue
-        
-        # Metadata filtering
-        meta = log.get('metadata', {})
-        if args.user and meta.get('user') != args.user: continue
-        if args.rhost and meta.get('rhost') != args.rhost: continue
-        if args.uid is not None and str(meta.get('uid')) != str(args.uid): continue
-        if args.tty and meta.get('tty') != args.tty: continue
-        if args.exit_code is not None and str(meta.get('exit_code')) != str(args.exit_code): continue
-        
-        filtered.append(log)
-    return filtered
-
-def print_aggregations(logs: List[Dict[str, Any]], args):
-    if not logs:
-        print("No logs to aggregate.")
-        return
-
-    if args.count_by_process:
-        print("\n--- Count by Process ---")
-        counts = Counter(log.get('process') for log in logs if log.get('process'))
-        for k, v in counts.most_common(10): print(f"{k}: {v}")
-
-    if args.count_by_event:
-        print("\n--- Count by Event ---")
-        counts = Counter(log.get('event') for log in logs if log.get('event'))
-        for k, v in counts.most_common(10): print(f"{k}: {v}")
-
-    if args.count_by_user:
-        print("\n--- Count by User ---")
-        counts = Counter(log.get('metadata', {}).get('user') for log in logs if log.get('metadata', {}).get('user'))
-        for k, v in counts.most_common(10): print(f"{k}: {v}")
-
-    if args.count_by_hostname:
-        print("\n--- Count by Hostname ---")
-        counts = Counter(log.get('hostname') for log in logs if log.get('hostname'))
-        for k, v in counts.most_common(10): print(f"{k}: {v}")
-
-    if args.count_by_hour:
-        print("\n--- Count by Hour ---")
-        # Basic hour extraction assuming timestamp starts with Date/Time
-        hours = []
-        for log in logs:
-            ts = log.get('timestamp')
-            if ts:
-                # Naive split for standard syslog "Jun 15 04:06:18" or ISO "2026-04-05T15:35:01"
+            # Assume NDJSON - highly efficient streaming
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
                 try:
-                    if 'T' in ts:
-                        hour = ts.split('T')[1].split(':')[0]
-                    else:
-                        hour = ts.split()[2].split(':')[0]
-                    hours.append(hour)
-                except Exception:
-                    pass
-        counts = Counter(hours)
-        for k, v in sorted(counts.items()): print(f"{k}:00 -> {v}")
+                    yield json.loads(line)
+                except json.JSONDecodeError:
+                    continue
 
-def export_results(logs: List[Dict[str, Any]], output_file: str, format: str):
-    if format == 'json':
-        with open(output_file, 'w', encoding='utf-8') as f:
-            json.dump({"logs": logs}, f, indent=2)
-        print(f"\nExported {len(logs)} records to {output_file}")
-    elif format == 'csv':
-        if not logs:
-            print("No logs to export.")
-            return
-        # Flatten basic fields
-        headers = ['line_number', 'timestamp', 'hostname', 'process', 'pid', 'event', 'message']
-        with open(output_file, 'w', newline='', encoding='utf-8') as f:
-            writer = csv.DictWriter(f, fieldnames=headers, extrasaction='ignore')
+def record_matches(record: Dict[str, Any], args: argparse.Namespace, meta_filters: Dict[str, str]) -> bool:
+    """Returns True if the record matches all provided filters."""
+    if args.process and record.get('process') != args.process:
+        return False
+    if args.event and record.get('event') != args.event:
+        return False
+    if args.hostname and record.get('hostname') != args.hostname:
+        return False
+    if args.pid and str(record.get('pid')) != str(args.pid):
+        return False
+        
+    # Metadata filters
+    meta = record.get('metadata', {})
+    if args.user and str(meta.get('user')) != args.user:
+        return False
+    if args.rhost and str(meta.get('rhost')) != args.rhost:
+        return False
+        
+    for k, v in meta_filters.items():
+        if str(meta.get(k)) != v:
+            return False
+            
+    # Substring search
+    if args.message_contains and args.message_contains.lower() not in record.get('message', '').lower():
+        return False
+        
+    return True
+
+def print_record(record: Dict[str, Any]):
+    """Pretty print a single log record."""
+    ts = record.get('timestamp', '')
+    host = record.get('hostname', '')
+    proc = record.get('process', '')
+    evt = record.get('event', '')
+    msg = record.get('message', '')
+    meta = record.get('metadata', {})
+    
+    meta_str = " ".join([f"{k}={v}" for k, v in meta.items()])
+    print(f"[{ts}] {host} | {proc} | {evt} | {msg} | {meta_str}")
+
+def export_to_json(data: list, filepath: str):
+    with open(filepath, 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=2)
+    print(f"Exported {len(data)} items to {filepath}")
+
+def export_to_csv(data: list, filepath: str, is_aggregation: bool):
+    with open(filepath, 'w', encoding='utf-8', newline='') as f:
+        if is_aggregation:
+            writer = csv.writer(f)
+            writer.writerow(["Key", "Count"])
+            for row in data:
+                writer.writerow([row["key"], row["count"]])
+        else:
+            if not data:
+                return
+            # Collect all possible keys
+            keys = set()
+            for r in data:
+                keys.update(r.keys())
+                if 'metadata' in r:
+                    keys.update([f"meta.{k}" for k in r['metadata'].keys()])
+            keys.discard('metadata')
+            key_list = sorted(list(keys))
+            
+            writer = csv.DictWriter(f, fieldnames=key_list)
             writer.writeheader()
-            for log in logs:
-                row = {k: log.get(k) for k in headers}
-                writer.writerow(row)
-        print(f"\nExported {len(logs)} records to {output_file}")
+            
+            for r in data:
+                flat_r = {k: v for k, v in r.items() if k != 'metadata'}
+                for k, v in r.get('metadata', {}).items():
+                    flat_r[f"meta.{k}"] = v
+                writer.writerow(flat_r)
+    print(f"Exported {len(data)} items to {filepath}")
 
 def main():
-    parser = argparse.ArgumentParser(description="Query and Aggregate Structured JSON Logs")
+    args = parse_args()
+    meta_filters = parse_metadata_filters(args.meta)
     
-    # Input/Output
-    parser.add_argument('--input', required=True, help='Path to parsed JSON or NDJSON file')
-    parser.add_argument('--export', help='Path to export results')
-    parser.add_argument('--format', choices=['json', 'csv'], default='json', help='Export format (default: json)')
-    
-    # Basic Filters
-    parser.add_argument('--process', help='Filter by process name (e.g. sshd)')
-    parser.add_argument('--event', help='Filter by event type (e.g. authentication_failure)')
-    parser.add_argument('--hostname', help='Filter by hostname')
-    parser.add_argument('--pid', help='Filter by PID')
-    parser.add_argument('--keyword', help='Filter by substring in message')
-    
-    # Metadata Filters
-    parser.add_argument('--user', help='Filter by metadata user')
-    parser.add_argument('--uid', help='Filter by metadata uid')
-    parser.add_argument('--rhost', help='Filter by metadata rhost')
-    parser.add_argument('--tty', help='Filter by metadata tty')
-    parser.add_argument('--exit_code', help='Filter by metadata exit_code')
-    
-    # Aggregations
-    parser.add_argument('--count-by-process', action='store_true', help='Show top processes')
-    parser.add_argument('--count-by-event', action='store_true', help='Show top events')
-    parser.add_argument('--count-by-user', action='store_true', help='Show top users')
-    parser.add_argument('--count-by-hostname', action='store_true', help='Show top hostnames')
-    parser.add_argument('--count-by-hour', action='store_true', help='Show activity by hour')
+    if not os.path.exists(args.input):
+        print(f"File not found: {args.input}")
+        return
 
-    args = parser.parse_args()
-
-    print(f"Loading {args.input}...")
-    if args.input.endswith('.ndjson') or args.input.endswith('.ndjson.gz'):
-        logs = load_ndjson(args.input)
+    print(f"Querying {args.input} (Streaming mode)...")
+    
+    matched_records = []
+    aggregation_counter = Counter()
+    match_count = 0
+    
+    for record in stream_records(args.input):
+        if record_matches(record, args, meta_filters):
+            match_count += 1
+            
+            if args.aggregate:
+                if args.aggregate == "process":
+                    key = record.get('process', 'unknown')
+                elif args.aggregate == "event":
+                    key = record.get('event', 'unknown')
+                elif args.aggregate == "user":
+                    key = record.get('metadata', {}).get('user', 'unknown')
+                elif args.aggregate == "hostname":
+                    key = record.get('hostname', 'unknown')
+                elif args.aggregate == "hour":
+                    ts = record.get('timestamp', '')
+                    if 'T' in ts:  # ISO
+                        key = ts.split('T')[1].split(':')[0]
+                    else:  # BSD
+                        parts = ts.split()
+                        if len(parts) >= 3:
+                            key = parts[2].split(':')[0]
+                        else:
+                            key = "unknown"
+                
+                aggregation_counter[key] += 1
+            else:
+                if args.limit == 0 or len(matched_records) < args.limit:
+                    matched_records.append(record)
+                
+    print(f"\n--- Query Complete ---")
+    print(f"Total Matches Found: {match_count:,}")
+    
+    if args.aggregate:
+        print(f"\nAggregation by {args.aggregate.upper()}:")
+        agg_data = []
+        for k, count in aggregation_counter.most_common(args.limit if args.limit > 0 else None):
+            print(f"  {k:<30} : {count:,}")
+            agg_data.append({"key": k, "count": count})
+            
+        if args.export_json:
+            export_to_json(agg_data, args.export_json)
+        if args.export_csv:
+            export_to_csv(agg_data, args.export_csv, True)
+            
     else:
-        logs = load_json(args.input)
-        
-    print(f"Loaded {len(logs)} records.")
-
-    filtered_logs = filter_logs(logs, args)
-    print(f"Matched {len(filtered_logs)} records after filtering.")
-
-    # Show a sample if filters were applied and no aggregations requested
-    if len(filtered_logs) > 0 and len(filtered_logs) != len(logs):
-        if not any([args.count_by_process, args.count_by_event, args.count_by_user, args.count_by_hostname, args.count_by_hour]):
-            print("\nSample Match:")
-            print(json.dumps(filtered_logs[0], indent=2))
-
-    # Run Aggregations
-    print_aggregations(filtered_logs, args)
-
-    # Export
-    if args.export:
-        export_results(filtered_logs, args.export, args.format)
+        print(f"\nDisplaying Top {len(matched_records)} Results:")
+        for r in matched_records:
+            print_record(r)
+            
+        if args.export_json:
+            export_to_json(matched_records, args.export_json)
+        if args.export_csv:
+            export_to_csv(matched_records, args.export_csv, False)
 
 if __name__ == "__main__":
     main()
