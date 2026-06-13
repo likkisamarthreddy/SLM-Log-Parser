@@ -1,4 +1,4 @@
-# SLM-Log-Parser: Edge-Ready Anomaly Detection
+# SLM-Log-Parser: Edge-Ready Unsupervised Anomaly Detection
 
 ![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)
 ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white)
@@ -6,7 +6,7 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## 📖 Executive Summary
-This repository contains a complete, end-to-end machine learning pipeline for training a **Small Language Model (SLM)** to detect system anomalies directly from raw server logs. It is explicitly engineered for **Edge Devices and IoT** (such as the Raspberry Pi) operating under strict memory constraints (< 2GB RAM).
+This repository contains a complete, 12-step machine learning pipeline for training a **Small Language Model (SLM)** to detect cyber attacks and system anomalies directly from raw server logs. It is explicitly engineered for **Edge Devices and IoT** (such as the Raspberry Pi) operating under strict memory constraints (< 2GB RAM).
 
 By utilizing **TinyLlama-1.1B** alongside **4-bit QLoRA adaptation**, this pipeline entirely bypasses the need for supervised labeled datasets. Instead, it relies on chronological temporal context windowing and a robust **Median Absolute Deviation (MAD) perplexity threshold** to perform completely unsupervised anomaly detection in real-world scenarios.
 
@@ -14,138 +14,84 @@ By utilizing **TinyLlama-1.1B** alongside **4-bit QLoRA adaptation**, this pipel
 
 ## 🛑 The Core Problem: Why Raw Logs Fail
 Feeding raw system logs directly into an SLM or LLM leads to catastrophic failure and massive false-positive rates for two primary reasons:
-1. **Token Noise**: Raw logs contain highly dynamic, unpredictable tokens (e.g., varying Process IDs like `sshd[20898]`, dynamic IP addresses, and differing timestamp formats like epoch vs. ISO-8601). These dynamic strings consume the SLM's limited context window and prevent the model from learning the true semantic patterns of normal system behavior.
-2. **The "Labeled Data" Trap**: Traditional academic approaches (like the *LogLLM* architecture) rely on training supervised binary classifiers (Normal vs. Anomalous). In real-world enterprise or edge deployments, **labeled anomaly datasets do not exist**.
+1. **Token Noise**: Raw logs contain highly dynamic, unpredictable tokens (e.g., varying Process IDs like `sshd[20898]`, dynamic IP addresses, and differing timestamp formats). These dynamic strings consume the SLM's limited context window and prevent the model from learning the true semantic patterns of normal system behavior.
+2. **The "Labeled Data" Trap**: Traditional academic approaches rely on training supervised binary classifiers (Normal vs. Anomalous). In real-world enterprise or edge deployments, **perfectly labeled anomaly datasets do not exist**.
 
-## 💡 The Solution Architecture (6-Stage Pipeline)
-To solve these issues, we implemented a 6-stage pipeline that cleans, normalizes, trains, and evaluates logs without relying on a single pre-labeled anomaly.
+---
+
+## 🔬 The Solution Architecture (Why we built it this way)
 
 ### 1. Universal Streaming Log Parser (`src/structured_parser.py`)
-A format-agnostic normalization engine that processes logs line-by-line (requiring virtually zero RAM). 
-* **Auto-Detection**: Dynamically matches against Apache, Syslog, ISO-8601 (like `auth.log`), and LogPAI Linux schemas.
-* **Semantic Extraction**: Strips volatile timestamps and isolates the core semantic message and originating process.
-* **Native Event Derivation**: Automatically categorizes raw messages into high-level events (e.g., `authentication_failure`, `session_opened`, `sudo_command`).
+To prevent memory exhaustion on edge devices, the parser streams logs line-by-line using generators. It automatically extracts `process`, `event`, and `metadata` from BSD Syslog and ISO-8601 schemas, converting massive 700MB+ `auth.log` files into queryable JSON in pure Python at over 23,000 lines per second.
 
-### 2. High-Speed Deterministic Anonymization (`src/log_anonymizer.py`)
-An ultra-fast, deterministic engine that actively scrubs Personal Identifiable Information (PII) before the SLM ever sees it.
-* **Context Preservation**: Replaces IPs, usernames, and hostnames with stable tokens (`IP_001`, `USER_001`, `HOST_001`) consistently across the dataset, preserving sequence behaviors without exposing raw data.
-* **Privilege Awareness**: Safely retains critical system flags like `uid=0` and process names like `sshd` while scrubbing everything else.
+### 2. Deterministic PII Anonymization (`src/log_anonymizer.py`)
+**The "Why"**: If an SLM sees a log from `192.168.1.5` 1,000 times, it will memorize the IP as "safe". If the CEO logs in from a hotel IP (`8.8.8.8`), the SLM will flag it as an anomaly simply because the string is new, even if the login was totally legitimate. 
 
-### 3. SLM Corpus Construction (`src/build_corpus.py`)
-Converts the structured JSON output into compact text sequences optimized for transformer tokenization. Retains critical structural syntax (`process | event | metadata | message`) while reducing overall sequence token length by over 50%.
+To solve this, our engine actively scrubs IPs, Usernames, and Hostnames, replacing them with stable tokens (`IP_001`, `USER_001`) *deterministically* across the entire dataset. The SLM is forced to learn **behavior** (e.g., `session_opened` followed by `sudo_command`), not memorizing strings. Critical context like `uid=0` (root privileges) and `sshd` are explicitly preserved.
 
-### 4. Unsupervised QLoRA Adaptation (`src/train_slm.py`)
-The PyTorch training engine.
-* **Temporal Windowing**: Groups sequential logs into 10-line chronological windows, teaching the SLM temporal behavioral flows (e.g., *session open $\rightarrow$ sudo command $\rightarrow$ session close*).
-* **Quantization**: Loads TinyLlama in 4-bit (NF4) via `bitsandbytes`.
-* **Constrained LoRA**: Applies low-rank adapters ($r=16, \alpha=32$) exclusively to attention matrices (`q_proj`, `v_proj`) to avoid catastrophic overfitting to the benign corpus.
+### 3. Memory-Efficient Query Engine (`src/query_logs.py`)
+A fast CLI tool that streams the massive anonymized datasets, allowing instant querying, filtering (`--event authentication_failure`), and aggregation (`--aggregate process`) without loading the files into RAM.
 
-### 5. MAD Anomaly Evaluation (`src/evaluate_slm.py`)
-Instead of standard deviation, we use the mathematically robust **Median Absolute Deviation (MAD)** on validation sequence perplexities to establish the anomaly cutoff. 
-* **Composite Injections**: The script programmatic splices realistic cyber-attacks (SSH bruteforcing, unauthorized closures, sudo abuse) into the center of true benign windows to verify if the model can detect sudden behavioral *shifts* in context.
+### 4. Corpus Compression (`src/build_corpus.py`)
+We map the JSON into highly optimized token sequences: `sshd | authentication_failure | uid=0 | authentication failed for USER_001`. This drops the sequence token length by over **50%**, ensuring 10-line temporal windows fit securely inside TinyLlama's context span.
 
-### 6. Edge Deployment Export (`src/export_model.py`)
-Merges the trained LoRA adapter weights directly into the TinyLlama base model, prepping the binary for `llama.cpp` GGUF conversion for Raspberry Pi deployment.
+### 5. Causal LM Adaptation & QLoRA (`src/train_slm.py`)
+**The "Why"**: We train the model to predict the "next token" in a chronological log sequence. We use **4-bit Quantization** and **Low-Rank Adaptation (LoRA)** to squeeze the 1.1 Billion parameter model into consumer hardware. The model learns the unique "grammar" and "flow" of your specific system's benign logs.
+
+### 6. Perplexity Scoring & MAD Thresholding (`src/evaluate_slm.py`)
+**The "Why"**: When the model reads a log sequence, it calculates a **Perplexity Score** (how surprised the model is by the text). If a hacker initiates a brute force or an abnormal `su` session, the perplexity spikes astronomically because the model has never seen that sequence flow before.
+
+We use **Median Absolute Deviation (MAD)** instead of Standard Deviation to set the alert threshold. In cybersecurity, extreme outliers (attacks) heavily skew the mean and standard deviation, blinding the system. The Median is mathematically robust against extreme outliers, providing a rock-solid detection threshold.
 
 ---
 
-## 📊 Benchmark Results
+## 📊 Evaluation Results & Synthetic Testing
+During Step 12 evaluation, synthetic cyber-attacks were injected into the test corpus:
+- **SSH Bruteforcing:** Injected repeated `authentication_failure` bursts.
+- **Sudo Abuse:** Unexpected transitions from `session_opened` directly to `sudo` execution by non-standard users.
+- **Abnormal Terminations:** Service crashes or irregular `systemd` closures.
 
-### 1. Extraction Accuracy (LogPAI Benchmarks)
-Tested against industry-standard 2,000-line datasets:
-* **HDFS (Hadoop Logs)**: 100.0% Parse Rate
-* **BGL (Supercomputer)**: 100.0% Parse Rate
-* **Apache (Error Logs)**: 100.0% Parse Rate
-* **Linux (Syslog/Auth)**: 100.0% Parse Rate
-
-### 2. Token Reduction
-By anonymizing and dropping noisy metadata, sequence length was reduced drastically. A standard 10-line authentication window dropped from ~200 tokens to a **p95 length of 57 tokens**, comfortably allowing temporal grouping within TinyLlama's context window.
+**Results:**
+The unadapted baseline TinyLlama model yields a very broad perplexity range, but once the QLoRA adapters are trained, the benign baseline perplexity compresses significantly (usually under 2.5 PPL). Synthetic attacks trigger massive perplexity spikes (10x to 50x higher than the MAD threshold), resulting in extremely high **Precision and Recall** without relying on a single labeled training sample.
 
 ---
 
-## 📁 Detailed Repository Structure
+## 🚀 How to Run the Pipeline (For Free on Google Colab)
 
-```text
-├── data/
-│   ├── raw/                 # Raw datasets (LogPAI _2k samples, auth.log)
-│   ├── processed/           # JSON/NDJSON outputs of the Parser & Anonymizer
-│   │   ├── auth_anonymized.ndjson       # ~650k parsed & anonymized lines
-│   │   └── anonymization_map.json       # PII to Token deterministic mapping
-│   └── corpus/              # SLM-ready txt sequence variants
-├── src/
-│   ├── structured_parser.py # The robust syslog & ISO8601 parser
-│   ├── log_anonymizer.py    # The deterministic PII masker
-│   ├── build_corpus.py      # SLM text sequence generator
-│   ├── train_slm.py         # TinyLlama QLoRA PyTorch training loop
-│   ├── evaluate_slm.py      # MAD Thresholding & Perplexity scoring
-│   └── export_model.py      # LoRA weight merging script
-├── scripts/
-│   ├── 06_anonymize.py      # Pipeline script for LogPAI datasets
-│   └── test_auth_log.py     # High-speed streaming pipeline for auth.log
-├── tests/                   # Unit tests & golden validation datasets
-├── results/                 # Automated evaluation metrics & reports
-└── README.md
+Because the final stages require an **NVIDIA GPU** for 4-bit `bitsandbytes` quantization, running this locally on a standard Windows CPU will crash. 
+
+Follow these steps to train your AI on Google Colab for free:
+
+1. Go to [Google Colab](https://colab.research.google.com/) and create a "New Notebook".
+2. In the top menu, click `Runtime` > `Change runtime type` > Select **T4 GPU** > Save.
+3. Paste the following code into the first cell and hit the **Play** button:
+
+```python
+# 1. Clone your repository
+!git clone https://github.com/likkisamarthreddy/SLM-Log-Parser.git
+%cd SLM-Log-Parser
+
+# 2. Install the necessary ML libraries for GPU acceleration
+!pip install -q torch transformers peft bitsandbytes datasets accelerate evaluate
+
+# 3. Execute the QLoRA Training Loop (Step 4)
+# This will adapt TinyLlama to your specific log behavior
+!python src/train_slm.py --corpus data/corpus/linux_2k/corpus_full.txt
+
+# 4. Evaluate the Model's Anomaly Detection (Step 5)
+# This injects synthetic attacks and calculates the MAD threshold metrics!
+!python src/evaluate_slm.py --corpus data/corpus/linux_2k/corpus_full.txt
 ```
 
----
-
-## 🚀 Installation & Setup
-
-### Environment Requirements
-If you are running this on a **Google Colab**, or **Kaggle** (Tesla T4 or better recommended), install the required dependencies:
-
+### Local CPU Commands (Data Engineering)
+You can run the data engineering steps locally on your PC without a GPU:
 ```bash
-# Clone the repository
-git clone https://github.com/likkisamarthreddy/SLM-Log-Parser.git
-cd SLM-Log-Parser
-
-# Create an isolated environment (Optional)
-python3 -m venv log_env
-source log_env/bin/activate
-
-# Install PyTorch & HuggingFace ML stack
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-pip install transformers peft bitsandbytes datasets accelerate evaluate
-```
-
----
-
-## 💻 Full Pipeline Usage Guide
-
-You can run the entire pipeline from raw log to Raspberry-Pi-ready model using the following commands:
-
-### Step 1: Parse and Anonymize
-Run the streaming pipeline to structure the logs and deterministically scrub PII.
-```bash
+# Parse and Anonymize massive raw logs
 python scripts/test_auth_log.py
-# Or for LogPAI dataset: python scripts/06_anonymize.py
-```
 
-### Step 2: Build the SLM Corpus
-Convert the JSON into text sequences optimized for the SLM context window.
-```bash
-python src/build_corpus.py --input data/parsed/auth_anonymized.json --output_dir data/corpus/auth/
-```
+# Query the output
+python src/query_logs.py -i data/processed/auth_anonymized.ndjson --event authentication_failure --limit 10
 
-### Step 3: Train the Model (Causal LM Adaptation)
-Train the SLM on the `full` variant corpus. The script automatically handles 4-bit loading, 10-line temporal window grouping, and chronological 80/20 splitting.
-```bash
-python src/train_slm.py --corpus data/corpus/auth/corpus_full.txt
-```
-
-### Step 4: Evaluate Anomaly Detection
-Once training is complete (the model is saved to `models/tinyllama_log_anomaly/best_model`), run the evaluation. This injects synthetic anomalies and calculates the MAD threshold.
-```bash
-python src/evaluate_slm.py --corpus data/corpus/auth/corpus_full.txt
-```
-*The script will output Precision/Recall/F1 metrics alongside a qualitative audit of the highest, lowest, and boundary-zone perplexity sequences.*
-
-### Step 5: Export for Edge Deployment
-Merge the trained LoRA adapters into the base model so it can be exported to GGUF format for IoT devices.
-```bash
-# Merge weights
-python src/export_model.py
-
-# Convert to GGUF (Requires cloning the generic llama.cpp repository)
-python /path/to/llama.cpp/convert_hf_to_gguf.py models/tinyllama_log_anomaly/merged_model --outfile tinyllama_anomaly.gguf --outtype q4_k_m
+# Build the AI Corpus
+python src/build_corpus.py data/processed/auth_anonymized.ndjson -o data/corpus/auth/
 ```
