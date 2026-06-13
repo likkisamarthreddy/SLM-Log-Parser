@@ -81,7 +81,8 @@ def main():
         model = AutoModelForCausalLM.from_pretrained(
             model_id,
             quantization_config=bnb_config,
-            device_map="auto"
+            device_map="auto",
+            attn_implementation="sdpa"
         )
         model = prepare_model_for_kbit_training(model)
     else:
@@ -106,13 +107,15 @@ def main():
     
     training_args = TrainingArguments(
         output_dir=args.output_dir,
-        per_device_train_batch_size=4,
-        gradient_accumulation_steps=4,
-        optim="paged_adamw_32bit",
+        per_device_train_batch_size=8,
+        gradient_accumulation_steps=2,
+        optim="adamw_bnb_8bit",
         save_steps=500,
         logging_steps=100 if not args.test else 10,
         learning_rate=2e-4,
         fp16=True,
+        gradient_checkpointing=True,
+        dataloader_num_workers=4,
         max_grad_norm=0.3,
         max_steps=steps,
         num_train_epochs=epochs,
