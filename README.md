@@ -20,16 +20,16 @@ Feeding raw system logs directly into an SLM or LLM leads to catastrophic failur
 ## 💡 The Solution Architecture (6-Stage Pipeline)
 To solve these issues, we implemented a 6-stage pipeline that cleans, normalizes, trains, and evaluates logs without relying on a single pre-labeled anomaly.
 
-### 1. Universal Streaming Log Parser (`src/universal_parser.py`)
+### 1. Universal Streaming Log Parser (`src/structured_parser.py`)
 A format-agnostic normalization engine that processes logs line-by-line (requiring virtually zero RAM). 
-* **Auto-Detection**: Dynamically matches against Apache, Syslog, ISO-8601, HDFS, and BGL schemas.
+* **Auto-Detection**: Dynamically matches against Apache, Syslog, ISO-8601 (like `auth.log`), and LogPAI Linux schemas.
 * **Semantic Extraction**: Strips volatile timestamps and isolates the core semantic message and originating process.
 * **Native Event Derivation**: Automatically categorizes raw messages into high-level events (e.g., `authentication_failure`, `session_opened`, `sudo_command`).
 
-### 2. High-Speed PII Anonymization (`src/anonymizer.py`)
-An ultra-fast, single-pass Regex engine that actively scrubs Personal Identifiable Information (PII) before the SLM ever sees it.
-* **Reverse-Length-Order Masking**: Ensures that partial IP overlaps (e.g., `192.168.1.1` vs `192.168.1.100`) do not corrupt string replacement.
-* **Pseudonymization**: Safely replaces variables with stable tokens (`REMOTE_HOST_001`, `USER_099`, `PID_042`) directly inside both the raw string and the metadata dictionary.
+### 2. High-Speed Deterministic Anonymization (`src/log_anonymizer.py`)
+An ultra-fast, deterministic engine that actively scrubs Personal Identifiable Information (PII) before the SLM ever sees it.
+* **Context Preservation**: Replaces IPs, usernames, and hostnames with stable tokens (`IP_001`, `USER_001`, `HOST_001`) consistently across the dataset, preserving sequence behaviors without exposing raw data.
+* **Privilege Awareness**: Safely retains critical system flags like `uid=0` and process names like `sshd` while scrubbing everything else.
 
 ### 3. SLM Corpus Construction (`src/build_corpus.py`)
 Converts the structured JSON output into compact text sequences optimized for transformer tokenization. Retains critical structural syntax (`process | event | metadata | message`) while reducing overall sequence token length by over 50%.
@@ -68,20 +68,22 @@ By anonymizing and dropping noisy metadata, sequence length was reduced drastica
 ```text
 ├── data/
 │   ├── raw/                 # Raw datasets (LogPAI _2k samples, auth.log)
-│   ├── parsed/              # JSON outputs of the Parser & Anonymizer
-│   │   ├── auth_anonymized.ndjson.gz  # 650k lines, compressed
-│   │   └── anonymization_map.json     # PII to Token mapping dictionary
+│   ├── processed/           # JSON/NDJSON outputs of the Parser & Anonymizer
+│   │   ├── auth_anonymized.ndjson       # ~650k parsed & anonymized lines
+│   │   └── anonymization_map.json       # PII to Token deterministic mapping
 │   └── corpus/              # SLM-ready txt sequence variants
-│       ├── auth/            # 650k dataset corpora (full, message_only, etc.)
-│       └── linux_2k/        # 2k dataset corpora
 ├── src/
-│   ├── universal_parser.py  # The streaming log parser engine
-│   ├── anonymizer.py        # The Regex PII masker
+│   ├── structured_parser.py # The robust syslog & ISO8601 parser
+│   ├── log_anonymizer.py    # The deterministic PII masker
 │   ├── build_corpus.py      # SLM text sequence generator
 │   ├── train_slm.py         # TinyLlama QLoRA PyTorch training loop
 │   ├── evaluate_slm.py      # MAD Thresholding & Perplexity scoring
 │   └── export_model.py      # LoRA weight merging script
-├── results/                 # Raw logs from benchmark tests
+├── scripts/
+│   ├── 06_anonymize.py      # Pipeline script for LogPAI datasets
+│   └── test_auth_log.py     # High-speed streaming pipeline for auth.log
+├── tests/                   # Unit tests & golden validation datasets
+├── results/                 # Automated evaluation metrics & reports
 └── README.md
 ```
 
@@ -113,9 +115,10 @@ pip install transformers peft bitsandbytes datasets accelerate evaluate
 You can run the entire pipeline from raw log to Raspberry-Pi-ready model using the following commands:
 
 ### Step 1: Parse and Anonymize
-Pass your raw `.log` file into the parser. The `--anonymize` flag ensures PII is immediately scrubbed.
+Run the streaming pipeline to structure the logs and deterministically scrub PII.
 ```bash
-python src/universal_parser.py data/raw/auth.log -o data/parsed/auth_anonymized.json --anonymize
+python scripts/test_auth_log.py
+# Or for LogPAI dataset: python scripts/06_anonymize.py
 ```
 
 ### Step 2: Build the SLM Corpus
