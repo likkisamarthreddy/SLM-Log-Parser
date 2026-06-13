@@ -1,0 +1,82 @@
+Jun 14 15:16:01 combo sshd(pam_unix)[19939]: authentication failure; logname= uid=0 euid=0 tty=NODEVssh ruser= rhost=218.188.2.4
+Jun 15 02:04:59 combo sshd(pam_unix)[20882]: authentication failure; logname= uid=0 euid=0 tty=NODEVssh ruser= rhost=220-135-151-1.hinet-ip.hinet.net  user=root
+Jun 15 12:12:34 combo sshd(pam_unix)[23397]: check pass; user unknown
+Jun 15 12:12:34 combo sshd(pam_unix)[23397]: authentication failure; logname= uid=0 euid=0 tty=NODEVssh ruser= rhost=218.188.2.4
+Jun 15 14:53:32 combo sshd(pam_unix)[23661]: check pass; user unknown
+Jun 15 14:53:32 combo sshd(pam_unix)[23661]: authentication failure; logname= uid=0 euid=0 tty=NODEVssh ruser= rhost=061092085098.ctinets.com
+Jun 21 08:56:36 combo sshd(pam_unix)[14281]: authentication failure; logname= uid=0 euid=0 tty=NODEVssh ruser= rhost=217.60.212.66  user=guest
+Jun 22 03:17:26 combo sshd(pam_unix)[16207]: authentication failure; logname= uid=0 euid=0 tty=NODEVssh ruser= rhost=n219076184117.netvigator.com  user=root
+Jun 25 04:41:49 combo sshd(pam_unix)[31031]: check pass; user unknown
+Jun 25 04:41:49 combo sshd(pam_unix)[31031]: authentication failure; logname= uid=0 euid=0 tty=NODEVssh ruser= rhost=massive.merukuru.org
+Jun 28 08:10:24 combo sshd(pam_unix)[11513]: authentication failure; logname= uid=0 euid=0 tty=NODEVssh ruser= rhost=61.53.154.93  user=root
+Jun 28 20:58:46 combo sshd(pam_unix)[12665]: authentication failure; logname= uid=0 euid=0 tty=NODEVssh ruser= rhost=62-192-102-94.dsl.easynet.nl  user=root
+Jun 28 21:42:46 combo sshd(pam_unix)[12756]: check pass; user unknown
+Jun 28 21:42:46 combo sshd(pam_unix)[12756]: authentication failure; logname= uid=0 euid=0 tty=NODEVssh ruser= rhost=211.115.206.155
+Jun 23 02:55:14 combo sshd(pam_unix)[19085]: authentication failure; logname= uid=0 euid=0 tty=NODEVssh ruser= rhost=200.60.37.201
+Jun 15 04:06:18 combo su(pam_unix)[21416]: session opened for user cyrus by (uid=0)
+Jun 15 04:06:19 combo su(pam_unix)[21416]: session closed for user cyrus
+Jun 15 04:12:42 combo su(pam_unix)[22644]: session opened for user news by (uid=0)
+Jun 15 04:12:43 combo su(pam_unix)[22644]: session closed for user news
+Jun 16 04:10:22 combo su(pam_unix)[25178]: session opened for user cyrus by (uid=0)
+Jun 16 04:10:23 combo su(pam_unix)[25178]: session closed for user cyrus
+Jun 17 04:03:33 combo su(pam_unix)[27953]: session opened for user cyrus by (uid=0)
+Jun 17 04:03:34 combo su(pam_unix)[27953]: session closed for user cyrus
+Jun 18 04:07:05 combo su(pam_unix)[31791]: session opened for user cyrus by (uid=0)
+Jun 18 04:07:06 combo su(pam_unix)[31791]: session closed for user cyrus
+Jun 19 04:08:55 combo su(pam_unix)[2192]: session opened for user cyrus by (uid=0)
+Jun 19 04:08:55 combo su(pam_unix)[2192]: session closed for user cyrus
+Jun 20 04:02:54 combo su(pam_unix)[9187]: session opened for user cyrus by (uid=0)
+Jun 20 04:02:54 combo su(pam_unix)[9187]: session closed for user cyrus
+Jun 17 20:29:26 combo sshd(pam_unix)[30631]: session opened for user test by (uid=509)
+Jun 15 04:06:20 combo logrotate: ALERT exited abnormally with [1]
+Jun 16 04:10:24 combo logrotate: ALERT exited abnormally with [1]
+Jun 17 04:03:36 combo logrotate: ALERT exited abnormally with [1]
+Jun 18 04:07:06 combo logrotate: ALERT exited abnormally with [1]
+Jun 19 04:09:11 combo logrotate: ALERT exited abnormally with [1]
+Jun 20 04:02:55 combo logrotate: ALERT exited abnormally with [1]
+Jun 22 04:06:00 combo logrotate: ALERT exited abnormally with [1]
+Jun 24 04:05:35 combo logrotate: ALERT exited abnormally with [1]
+Jun 17 07:07:00 combo ftpd[29504]: connection from 24.54.76.216 (24-54-76-216.bflony.adelphia.net) at Fri Jun 17 07:07:00 2005
+Jun 17 07:07:00 combo ftpd[29508]: connection from 24.54.76.216 (24-54-76-216.bflony.adelphia.net) at Fri Jun 17 07:07:00 2005
+Jun 17 20:55:06 combo ftpd[30755]: connection from 82.252.162.81 (lns-vlq-45-tou-82-252-162-81.adsl.proxad.net) at Fri Jun 17 20:55:06 2005
+Jun 20 03:40:59 combo ftpd[8829]: connection from 222.33.90.199 () at Mon Jun 20 03:40:59 2005
+Jun 22 13:16:30 combo ftpd[17886]: connection from 210.245.165.136 () at Wed Jun 22 13:16:30 2005
+Jun 24 18:55:11 combo ftpd[28568]: connection from 218.69.108.57 () at Fri Jun 24 18:55:11 2005
+Jun 25 09:20:24 combo ftpd[31475]: connection from 210.118.170.95 () at Sat Jun 25 09:20:24 2005
+Jun 25 19:25:30 combo ftpd[32328]: connection from 211.167.68.59 () at Sat Jun 25 19:25:30 2005
+Jun 29 03:22:22 combo ftpd[13262]: connection from 61.74.96.178 () at Wed Jun 29 03:22:22 2005
+Jun 18 02:23:10 combo ftpd[31277]: User unknown timed out after 900 seconds at Sat Jun 18 02:23:10 2005
+Jun 19 04:08:57 combo cups: cupsd shutdown succeeded
+Jun 19 04:09:02 combo cups: cupsd startup succeeded
+Jun 19 04:09:11 combo syslogd 1.4.1: restart.
+Jun 26 04:04:19 combo cups: cupsd shutdown succeeded
+Jun 26 04:04:24 combo cups: cupsd startup succeeded
+Jun 26 04:04:31 combo syslogd 1.4.1: restart.
+Jun 20 04:44:39 combo snmpd[2318]: Received SNMP packet(s) from 67.170.148.126
+Jun 17 20:34:57 combo sshd(pam_unix)[30631]: session closed for user test
+Jul 10 14:55:07 combo sshd(pam_unix)[6738]: session opened for user root by (uid=0)
+Jul 10 18:22:13 combo sshd(pam_unix)[6738]: session closed for user root
+Jul 22 09:55:26 combo sshd(pam_unix)[2944]: authentication failure; logname= uid=0 euid=0 tty=NODEVssh ruser= rhost=mail.ly  user=root
+Jul 28 12:34:56 combo sshd(pam_unix)[9999]: session opened for user admin by (uid=1000)
+
+this is a malformed line with no structure
+
+Jun 15 04:06:18
+Jun 99 99:99:99 combo sshd(pam_unix)[19939]: bad timestamp test
+Jun 15 04:06:18 combo unknownprocess: some unknown message here
+Jun 15 04:06:18 combo sshd(pam_unix)[19939]: authentication failure; logname= uid=0 euid=0 tty=NODEVssh ruser= rhost=
+Jun 15 04:06:18 combo su(pam_unix)[21416]: session opened for user  by (uid=0)
+Jun 15 04:06:18 combo : message with empty process
+Jun 30 18:16:16 combo dhcpd: DHCPDISCOVER from 00:0c:29:1e:67:3c via eth0
+Jun 30 18:16:16 combo dhcpd: DHCPOFFER on 192.168.1.100 to 00:0c:29:1e:67:3c via eth0
+Jun 30 19:00:00 combo anacron[1234]: Job `cron.daily' terminated
+Jun 30 19:00:01 combo anacron[1234]: Normal exit (1 job run)
+Jul 01 00:00:00 combo kernel: imklog 3.22.0, log source = /proc/kmsg started.
+Jul 01 00:00:01 combo rsyslogd: [origin software="rsyslogd"] start
+Jul 01 00:00:02 combo kernel: Kernel logging (proc) stopped.
+Jul 01 00:00:03 combo exim4/smtp[5678]: 2005-07-01 00:00:03 H=mail.example.com [10.0.0.1] F=<sender@example.com> rejected after DATA
+Jul 02 11:22:33 otherhost sshd(pam_unix)[4444]: authentication failure; logname= uid=0 euid=0 tty=NODEVssh ruser= rhost=10.0.0.5  user=admin
+Jul 02 11:22:34 otherhost su(pam_unix)[4445]: session opened for user nobody by (uid=65534)
+Jul 02 11:22:35 otherhost logrotate: ALERT exited abnormally with [1]
+Jul 02 11:22:36 otherhost ftpd[4446]: connection from 172.16.0.1 () at Sat Jul 02 11:22:36 2005
+Jul 02 11:22:37 otherhost snmpd[4447]: Received SNMP packet(s) from 192.168.0.1

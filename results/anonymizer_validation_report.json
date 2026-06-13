@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-06-13T10:59:52.268530",
+  "golden_input_file": "C:\\Users\\user\\Desktop\\Tourist\\tests\\golden_input.log",
+  "parsing": {
+    "total_lines": 82,
+    "parseable_lines": 76,
+    "unparseable_lines": 6,
+    "parse_rate_pct": 92.68,
+    "field_accuracies": {
+      "timestamp_accuracy": 100.0,
+      "hostname_accuracy": 100.0,
+      "process_accuracy": 100.0,
+      "component_accuracy": 100.0,
+      "pid_accuracy": 100.0,
+      "message_accuracy": 100.0,
+      "event_accuracy": 100.0,
+      "metadata_accuracy": 100.0
+    }
+  },
+  "anonymization": {
+    "total_fields_anonymized": 131,
+    "event_preservation_rate": 100.0,
+    "process_preservation_rate": 100.0,
+    "security_keyword_preservation_rate": 100.0
+  },
+  "mapping_statistics": {
+    "unique_hosts": 0,
+    "unique_users": 8,
+    "unique_pids": 38,
+    "unique_remote_hosts": 8,
+    "unique_ips": 18
+  },
+  "deterministic_consistency": {
+    "runs_passed": 2,
+    "runs_failed": 0,
+    "details": []
+  },
+  "edge_cases": {
+    "passed": 10,
+    "failed": 0,
+    "details": []
+  }
+}
