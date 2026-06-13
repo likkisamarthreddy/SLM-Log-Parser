@@ -20,6 +20,8 @@ def parse_args():
     parser.add_argument("--output_dir", default="models/tinyllama_log_anomaly")
     parser.add_argument("--window_size", type=int, default=10) # 10 lines * ~57 tokens (p95) = ~570 tokens
     parser.add_argument("--test", action="store_true", help="Run a 100-step overfit test on 1000 sequences")
+    parser.add_argument("--push_to_hub", action="store_true", help="Push model checkpoints to Hugging Face Hub during training")
+    parser.add_argument("--hub_model_id", type=str, default=None, help="The namespace/repo on the Hub to push to (e.g., username/tinyllama-log-anomaly)")
     return parser.parse_args()
 
 def load_data(filepath, window_size, tokenizer, is_test=False):
@@ -121,7 +123,10 @@ def main():
         eval_steps=500 if not args.test else 20,
         load_best_model_at_end=True,
         metric_for_best_model="eval_loss",
-        report_to="none"
+        report_to="none",
+        push_to_hub=args.push_to_hub,
+        hub_model_id=args.hub_model_id,
+        hub_strategy="every_save",
     )
     
     trainer = Trainer(
@@ -140,6 +145,10 @@ def main():
         print("Saving best model...")
         trainer.save_model(os.path.join(args.output_dir, "best_model"))
         tokenizer.save_pretrained(os.path.join(args.output_dir, "best_model"))
+        
+        if args.push_to_hub:
+            print("Pushing final model to Hugging Face Hub...")
+            trainer.push_to_hub("End of training")
         
         # Log final perplexity on validation
         metrics = trainer.evaluate()
