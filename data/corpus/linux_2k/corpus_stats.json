@@ -1,42 +1,42 @@
 {
   "raw_masked": {
-    "total_lines": 2000,
-    "total_tokens": 126994,
-    "unique_tokens": 633,
-    "rare_tokens": 410,
-    "avg_tokens_per_line": 63.497,
+    "total_lines": 1999,
+    "total_tokens": 117012,
+    "unique_tokens": 590,
+    "rare_tokens": 418,
+    "avg_tokens_per_line": 58.53526763381691,
     "time_seconds": 0.08
   },
   "message_only": {
-    "total_lines": 2000,
-    "total_tokens": 44933,
-    "unique_tokens": 592,
-    "rare_tokens": 401,
-    "avg_tokens_per_line": 22.4665,
+    "total_lines": 1999,
+    "total_tokens": 54953,
+    "unique_tokens": 562,
+    "rare_tokens": 414,
+    "avg_tokens_per_line": 27.49024512256128,
     "time_seconds": 0.03
   },
   "process_message": {
-    "total_lines": 2000,
-    "total_tokens": 51633,
-    "unique_tokens": 614,
-    "rare_tokens": 409,
-    "avg_tokens_per_line": 25.8165,
-    "time_seconds": 0.03
+    "total_lines": 1999,
+    "total_tokens": 61665,
+    "unique_tokens": 584,
+    "rare_tokens": 422,
+    "avg_tokens_per_line": 30.84792396198099,
+    "time_seconds": 0.04
   },
   "event_message": {
-    "total_lines": 2000,
-    "total_tokens": 51167,
-    "unique_tokens": 601,
-    "rare_tokens": 400,
-    "avg_tokens_per_line": 25.5835,
-    "time_seconds": 0.03
+    "total_lines": 1999,
+    "total_tokens": 61484,
+    "unique_tokens": 578,
+    "rare_tokens": 415,
+    "avg_tokens_per_line": 30.757378689344673,
+    "time_seconds": 0.04
   },
   "full": {
-    "total_lines": 2000,
-    "total_tokens": 76748,
-    "unique_tokens": 642,
-    "rare_tokens": 415,
-    "avg_tokens_per_line": 38.374,
-    "time_seconds": 0.05
+    "total_lines": 1999,
+    "total_tokens": 99446,
+    "unique_tokens": 598,
+    "rare_tokens": 420,
+    "avg_tokens_per_line": 49.74787393696848,
+    "time_seconds": 0.06
   }
 }
