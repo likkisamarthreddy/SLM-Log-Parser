@@ -4,6 +4,7 @@ import torch
 import numpy as np
 import math
 from transformers import AutoTokenizer, AutoModelForCausalLM
+from peft import PeftModel
 import json
 
 def parse_args():
@@ -106,10 +107,13 @@ def main():
     print(f"Using device: {device}")
     
     try:
-        tokenizer = AutoTokenizer.from_pretrained(args.model_path)
-        model = AutoModelForCausalLM.from_pretrained(args.model_path, device_map=device)
+        model_id = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+        tokenizer = AutoTokenizer.from_pretrained(model_id)
+        base_model = AutoModelForCausalLM.from_pretrained(model_id, device_map=device)
+        print(f"Loading LoRA adapter from {args.model_path}...")
+        model = PeftModel.from_pretrained(base_model, args.model_path)
     except Exception as e:
-        print(f"Warning: Could not load fine-tuned model from {args.model_path}. Loading base model for testing.")
+        print(f"Warning: Could not load fine-tuned adapter from {args.model_path}: {e}")
         model_id = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
         tokenizer = AutoTokenizer.from_pretrained(model_id)
         model = AutoModelForCausalLM.from_pretrained(model_id, device_map=device)
@@ -130,8 +134,8 @@ def main():
     test_seqs = sequences[split_idx:]
     
     if device == "cpu":
-        print("CPU detected. Slicing test set to 100 sequences for faster evaluation.")
-        test_seqs = test_seqs[:100]
+        print("CPU detected. Slicing test set to 20 sequences for extremely fast local evaluation.")
+        test_seqs = test_seqs[:20]
         
     test_seqs, labels = inject_anomalies(test_seqs, args.anomaly_ratio)
     
