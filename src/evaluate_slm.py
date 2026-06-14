@@ -137,14 +137,24 @@ def main():
     try:
         model_id = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
         tokenizer = AutoTokenizer.from_pretrained(model_id)
-        base_model = AutoModelForCausalLM.from_pretrained(model_id, device_map=device)
+        base_model = AutoModelForCausalLM.from_pretrained(
+            model_id, 
+            device_map=device,
+            torch_dtype=torch.float16,
+            attn_implementation="sdpa"
+        )
         print(f"Loading LoRA adapter from {args.model_path}...")
         model = PeftModel.from_pretrained(base_model, args.model_path)
     except Exception as e:
         print(f"Warning: Could not load fine-tuned adapter from {args.model_path}: {e}")
         model_id = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
         tokenizer = AutoTokenizer.from_pretrained(model_id)
-        model = AutoModelForCausalLM.from_pretrained(model_id, device_map=device)
+        model = AutoModelForCausalLM.from_pretrained(
+            model_id, 
+            device_map=device,
+            torch_dtype=torch.float16,
+            attn_implementation="sdpa"
+        )
     
     model.eval()
     
