@@ -73,15 +73,43 @@ def inject_anomalies(test_seqs, anomaly_ratio):
         
     return test_seqs, labels
 
-def calculate_perplexity(model, tokenizer, sequence, device):
-    inputs = tokenizer(sequence, return_tensors="pt", truncation=True, max_length=1024).to(device)
-    with torch.no_grad():
-        outputs = model(inputs.input_ids, labels=inputs.input_ids)
-        loss = outputs.loss.item()
-    try:
-        return math.exp(loss)
-    except OverflowError:
-        return float('inf')
+def calculate_batched_perplexities(model, tokenizer, sequences, device, batch_size=32):
+    import torch.nn as nn
+    perplexities = []
+    if tokenizer.pad_token is None:
+        tokenizer.pad_token = tokenizer.eos_token
+    
+    # Process in batches
+    for i in range(0, len(sequences), batch_size):
+        batch = sequences[i:i+batch_size]
+        inputs = tokenizer(batch, return_tensors="pt", padding=True, truncation=True, max_length=1024).to(device)
+        
+        with torch.no_grad():
+            outputs = model(**inputs)
+            logits = outputs.logits
+            
+        shift_logits = logits[..., :-1, :].contiguous()
+        shift_labels = inputs.input_ids[..., 1:].contiguous()
+        shift_attention_mask = inputs.attention_mask[..., 1:].contiguous()
+        
+        loss_fct = nn.CrossEntropyLoss(reduction="none")
+        loss = loss_fct(shift_logits.view(-1, shift_logits.size(-1)), shift_labels.view(-1))
+        loss = loss.view(shift_labels.size())
+        
+        loss = loss * shift_attention_mask
+        seq_lengths = shift_attention_mask.sum(dim=1)
+        mean_losses = loss.sum(dim=1) / seq_lengths
+        
+        for l in mean_losses:
+            try:
+                perplexities.append(math.exp(l.item()))
+            except OverflowError:
+                perplexities.append(float('inf'))
+                
+        if (i + batch_size) % (batch_size * 5) == 0 or (i + batch_size) >= len(sequences):
+            print(f"Processed {min(i+batch_size, len(sequences))}/{len(sequences)}")
+            
+    return perplexities
 
 def calculate_mad(perplexities):
     median = np.median(perplexities)
@@ -139,13 +167,8 @@ def main():
         
     test_seqs, labels = inject_anomalies(test_seqs, args.anomaly_ratio)
     
-    print("Computing perplexities...")
-    perplexities = []
-    for i, seq in enumerate(test_seqs):
-        ppl = calculate_perplexity(model, tokenizer, seq, device)
-        perplexities.append(ppl)
-        if (i+1) % 50 == 0:
-            print(f"Processed {i+1}/{len(test_seqs)}")
+    print("Computing perplexities... (Batched for speed)")
+    perplexities = calculate_batched_perplexities(model, tokenizer, test_seqs, device, batch_size=16)
             
     # Calculate MAD on benign samples
     benign_ppls = [ppl for ppl, label in zip(perplexities, labels) if label == 0]
